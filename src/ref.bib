@@ -1,6 +1,39 @@
 
 % JOURNALS
 %==========================================================
+@Article{hroh-2017-ral,
+    AUTHOR = {Hyunchul Roh and Jinyong Jeong and \uline{Ayoung Kim}},
+    TITLE = {Aerial Image based Heading Correction for Large Scale {SLAM} in an Urban Canyon},
+    JOURNAL = {IEEE Robotics and Automation Letters (with IROS)},
+    YEAR = {2017},
+    VOLUME = {2},
+    NUMBER = {4},
+    PAGES = {2232 - 2239},
+    VIDEO = {https://youtu.be/gZ8ncdWBGEQ},
+    ABSTRACT = {This paper presents an effective solution for 3D urban
+    map generation using aerial images as prior information for Simultaneous
+    Localization and Mapping (SLAM). The research targets urban canyons where
+    Global Positioning System (GPS) signals are highly sporadic and erroneous.
+    As a solution for urban canyon mapping, this study proposes aerial image
+    based heading correction and kinematics considered odometry modeling. Aerial
+    images often suffer from being significantly askew due to the height of
+    structures and viewpoint changes, preventing direct integration with SLAM.
+    However, we found that the direction of the structural edges were still
+    valid, despite slanted building images. Making use of this property, this
+    paper proposes a heading correction method using aerial images. As heading
+    error is a critical factor in SLAM when mapping large areas, the proposed
+    heading correction method substantially reduces estimation errors. Aiming
+    for large urban area mapping, this paper also focuses on sensor modeling for
+    odometry and GPS data. In odometry generation, mobile robot kinematics is
+    considered by incorporating wheel diameter and base distance uncertainties
+    into odometry covariance modeling. Results are presented from various types
+    of urban areas over a path 28 km in length. For thorough validation, we ran
+    the algorithm on three urban areas with differing degrees of GPS
+    availability and structural complexity: a downtown area with medium
+    complexity, a building complex, and the downtown area of a large city.},
+    URL = {http://ieeexplore.ieee.org/document/7973081/},
+}
+
 @Article{hroh-2016-sensors,
     AUTHOR = {Hyunchul Roh and Jinyong Jeong and Younggun Cho and \uline{Ayoung Kim}},
     TITLE = {Accurate Mobile Urban Mapping via Digital Map-Based {SLAM}},
@@ -11,6 +44,7 @@
     PAGES = {1315},
     TYPE = {scie},
     MONTH = {Aug.},
+    VIDEO = {https://youtu.be/LN_SPVTlNNQ},
     ABSTRACT = {This paper presents accurate urban map generation using digital map-based
         Simultaneous Localization and Mapping (SLAM). Throughout this work, our main
         objective is generating a 3D and lane map aiming for sub-meter accuracy. In
@@ -40,7 +74,7 @@
     YEAR = {2016},
     VOLUME = {40},
     NUMBER = {7},
-    PAGES = {1245--1265},
+    PAGES = {1245–-1265},
     TYPE = {sci},
     MONTH = {Jul.},
     ABSTRACT = {This paper reports on an active SLAM framework for performing
@@ -213,6 +247,264 @@
 
 % CONFERENCES
 %==========================================================
+@INPROCEEDINGS {jjeong-2018-icra,
+    AUTHOR = {Jinyong Jeong and Younggun Cho and Young-Sik Shin and Hyunchul Roh and \uline{Ayoung Kim}},
+    TITLE = {Complex Urban LiDAR Data Set},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    YEAR = {2018},
+    MONTH = {May.},
+    ADDRESS = {Brisbane},
+    TYPE = {conf},
+    FILE = {jjeong-2018-icra.pdf:jeong/jjeong-2018-icra.pdf:PDF},
+    ABSTRACT = {This paper presents a Light Detection and Rang- ing (LiDAR) data
+    set that targets complex urban environments. Urban environments with
+    high-rise buildings and congested traffic pose a significant challenge for
+    many robotics appli- cations. The presented data set is unique in the sense
+    it is able to capture the genuine features of an urban environment (e.g.
+    metropolitan areas, large building complexes and under- ground parking
+    lots). Data of two-dimensional (2D) and three- dimensional (3D) LiDAR, which
+    are typical types of LiDAR sensors, are provided in the data set. The two
+    16-ray 3D LiDARs are tilted on both sides for maximal coverage. One 2D LiDAR
+    faces backward while the other faces forwards to collect data of roads and
+    buildings, respectively. Raw sensor data from Fiber Optic Gyro (FOG),
+    Inertial Measurement Unit (IMU), and the Global Positioning System (GPS) are
+    presented in a file format for vehicle pose estimation. The pose information
+    of the vehicle estimated at 100 Hz is also presented after applying the
+    graph simultaneous localization and mapping (SLAM) algorithm. For the
+    convenience of development, the file player and data viewer in Robot
+    Operating System (ROS) environment were also released via the web page. The
+    full data sets are available at: http://irap.kaist.ac.kr/dataset. In this
+    website, 3D preview of each data set is provided using WebGL.},
+    VIDEO = {https://youtu.be/IguZjmLf5V0},
+    NOTE = {Accepted. To appear},
+}
+
+@INPROCEEDINGS {jkim-2018-icra,
+    AUTHOR = {Joowan Kim and Younggun Cho and \uline{Ayoung Kim}},
+    TITLE = {Exposure Control using Bayesian Optimization based on Entropy Weighted Image Gradient},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    YEAR = {2018},
+    MONTH = {May.},
+    ADDRESS = {Brisbane},
+    FILE = {jwkim-2018-icra.pdf:kim/jwkim-2018-icra.pdf:PDF},
+    TYPE = {conf},
+    ABSTRACT = {Under- and oversaturation can cause severe im- age degradation
+    in many vision-based robotic applications. To control camera exposure in
+    dynamic lighting conditions, we introduce a novel metric for image
+    information measure. Measuring an image gradient is typical when evaluating
+    its level of image detail. However, emphasizing more informative pixels
+    substantially improves the measure within an image. By using this entropy
+    weighted image gradient, we introduce an optimal exposure value for
+    vision-based approaches. Using this newly invented metric, we also propose
+    an effective exposure control scheme that covers a wide range of light
+    conditions. When evaluating the function (e.g., image frame grab) is
+    expensive, the next best estimation needs to be carefully considered.
+    Through Bayesian optimization, the algorithm can estimate the optimal
+    exposure value with minimal cost. We validated the proposed image
+    information measure and exposure control scheme via a series of thorough
+    experiments using various exposure conditions.},
+    VIDEO = {https://youtu.be/mq0ZUy7Z0JE},
+    NOTE = {Accepted. To appear},
+}
+
+@INPROCEEDINGS {yshin-2018-icra,
+    AUTHOR = {Young-Sik Shin and Yeong Sang Park and \uline{Ayoung Kim}},
+    TITLE = {Direct Visual SLAM using Sparse Depth for Camera-LiDAR System},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    YEAR = {2018},
+    MONTH = {May.},
+    ADDRESS = {Brisbane},
+    TYPE = {conf},
+    FILE = {yshin-2018-icra.pdf:shin/yshin-2018-icra.pdf:PDF},
+    ABSTRACT = {This paper describes a framework for direct visual simultaneous
+    localization and mapping (SLAM) com- bining a monocular camera with sparse
+    depth information from Light Detection and Ranging (LiDAR). To ensure real-
+    time performance while maintaining high accuracy in motion estimation, we
+    present (i) a sliding window-based tracking method, (ii) strict pose
+    marginalization for accurate pose-graph SLAM and (iii) depth-integrated
+    frame matching for large- scale mapping. Unlike conventional feature-based
+    visual and LiDAR mapping, the proposed approach is direct, eliminating the
+    visual feature in the objective function. We evaluated results using our
+    portable camera-LiDAR system as well as KITTI odometry benchmark datasets.
+    The experimental results prove that the characteristics of two complementary
+    sensors are very effective in improving real-time performance and accuracy.
+    Via validation, we achieved low drift error of 0.98% in the KITTI benchmark
+    including various environments such as a highway and residential areas.},
+    VIDEO = {https://youtu.be/swN3oRj5WEg},
+    NOTE = {Accepted. To appear},
+}
+
+@INPROCEEDINGS {alee-2017-iccas,
+    AUTHOR = {Alex J. Lee and \uline{Ayoung Kim}},
+    TITLE = {Event-Based Real-time Optical Flow Estimation},
+    BOOKTITLE = {Proceedings of the International Conference on Control, Automation and Systems},
+    YEAR = {2017},
+    MONTH = {Oct.},
+    ADDRESS = {Jeju, S. Korea},
+    TYPE = {conf},
+    ABSTRACT = {In this paper, we introduce a novel approach defining feature and
+    its descriptor with an event-based sensor.The event-based vision sensors detect
+    partial intensity changes with high timing resolution, making conventional
+    featureextraction algorithms inefficient as they require pixel intensity
+    distribution. Compared to conventional frame-based al-gorithms, our algorithm
+    processes without building a global image, so as to avoid the delay in detecting
+    features after itappears. This empowers the low-latency characteristics of the
+    event-based vision sensor, making our algorithm a useful,precise alternative for
+    robot navigation in rapid environments.}
+}
+
+@INPROCEEDINGS {ykim-2017-iros,
+    AUTHOR = {Youngji Kim and Ayoung Kim},
+    TITLE = {On the Uncertainty Propagation: Why Uncertainty on Lie Groups Preserves Monotonicity?},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    YEAR = {2017},
+    MONTH = {Sep.},
+    ADDRESS = {Vancouver, Canada},
+    TYPE = {conf},
+    ABSTRACT = {Researchers in the simultaneous localization and mapping (SLAM)
+    community have taken for granted that uncertainty associated with the robot
+    pose increases until the loop is closed. However, recently identified by
+    [1], the monotonicity of uncertainty during exploration breaks when the
+    robot returns to the initial position. In this paper, we propose a
+    hypothesis that the monotonicity of pose uncertainty is preserved when the
+    uncertainty is propagated on Lie groups rather than on Euclidean vector
+    space. After deriving covariance propagated over Lie groups and Euclidean
+    vector space, respectively, the monotonicity of uncertainty in each case is
+    thoroughly investigated. Experiments with simulated and real-world scenarios
+    on dead-reckoning validate our hypothesis on the monotonicity of
+    uncertainty.},
+    NOTE = {In print.},
+    VIDEO = {https://youtu.be/kCG0tg2rIys},
+    FILE = {ykim-2017-iros.pdf:kim/ykim-2017-iros.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/8206181/}
+}
+
+@INPROCEEDINGS {mars-2017-urai,
+    AUTHOR = {Joowan Kim and Jinyong Jeong and Young-Sik Shin and Younggun Cho and Hyunchul Roh and Ayoung Kim},
+    TITLE = {{LiDAR} Configuration Comparison for Urban Mapping System},
+    BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
+    YEAR = {2017},
+    MONTH = {Aug.},
+    ADDRESS = {Jeju, S. Korea},
+    TYPE = {conf},
+    ABSTRACT = {The Mobile Mapping System (MMS) is widely used
+    when mapping urban environment. The critical challenge for
+    mapping accuracy is at localization accuracy under highly
+    sporadic global positioning system (GPS) signal. To tackle this
+    issue, approaches often rely on cameras and Light Detection
+    and Ranging (LiDAR)s to exploit visual and spatial features in
+    the environment. Among many sensors, this paper focuses on
+    the use of LiDAR, especially evaluating the LiDAR types and
+    mechanical configurations. In this paper, we compare two typical
+    LiDAR configurations, push-broom (2D) and 360 scanning (3D)
+    style, in terms of the resulting mapping performance. Resulting
+    maps from two configurations over the same place are directly
+    compared to evaluate characteristic of each LiDAR configuration.
+    Keywords—Mobile Mapping System, LiDAR, SLAM.},
+    PAGES = {854--857},
+    FILE = {mars-2017-urai.pdf:kim/mars-2017-urai.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7992845/}
+}
+
+@INPROCEEDINGS {yspark-2017-urai,
+    AUTHOR = {Yeong Sang Park and Ayoung Kim and Young Sam Lee},
+    TITLE = {Path Planning using Flexible Region Sampling for Arbitrarily-Shaped Obstacles},
+    BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
+    YEAR = {2017},
+    MONTH = {Aug.},
+    ADDRESS = {Jeju, S. Korea},
+    TYPE = {conf},
+    ABSTRACT = {In this paper, we propose a path planning algorithm
+    targeting an environment with complex and arbitrarily-shaped
+    obstacles. To tackle this issue, we propose a method that divides a
+    free region into various size adaptively. The proposed method uses
+    recursive tree traversal and k-means clustering to create various
+    size regions according to the distance of the obstacle. Divided
+    regions represent a large area with a small number of points
+    unlike the grid map used in the previous. Via two simulated ex-
+    periments, we validate that the proposed path planning approach
+    is capable of finding a feasible path while substantially improving
+    computational time and memory consumption compare to the
+    existing methods.},
+    PAGES = {210--215},
+    FILE = {yspark-2017-urai.pdf:park/yspark-2017-urai.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7992715/}
+}
+
+@INPROCEEDINGS {dgwon-2017-urai,
+    AUTHOR = {Dae-Hyeon Gwon and Joowan Kim and Moon Hwan Kim and Ho Gyu Park and Tae Yeong Kim, Ayoung Kim},
+    TITLE = {Development of a Side Scan Sonar Module for the UnderWater Simulator},
+    BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
+    YEAR = {2017},
+    MONTH = {Aug.},
+    ADDRESS = {Jeju, S. Korea},
+    TYPE = {conf},
+    PAGES = {662--665},
+    FILE = {dgwon-2017-urai.pdf:gwon/dgwon-2017-urai.pdf:PDF},
+    ABSTRACT = {In this paper, we implemented the Side Scan Sonar
+    (SSS) module for the UnderWater Simulator (UWSim) [1],
+    specifically focusing on sonar image simulation. To obtain the
+    simulated SSS images, we adopted the Lambertian diffusion
+    model [2]. The beam profile was modeled using a pair of sine
+    wave functions. We developed this sonar module in the UWSim
+    which runs on Robot Operating System (ROS) framework. For
+    validation, we applied feature matching to the obtained sonar
+    images, and examined the inliers and matching performance.},
+    URL = {http://ieeexplore.ieee.org/document/7992789/}
+}
+
+@INPROCEEDINGS {jwkim-2017-urai,
+    AUTHOR = {Joowan Kim and Ayoung Kim},
+    TITLE = {Light Condition Invariant Visual {SLAM} via Entropy based Image Fusion},
+    BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
+    YEAR = {2017},
+    MONTH = {Aug.},
+    ADDRESS = {Jeju, S. Korea},
+    TYPE = {conf},
+    PAGES = {529--533},
+    FILE = {jwkim-2017-urai.pdf:kim/jwkim-2017-urai.pdf:PDF},
+    ABSTRACT = {Cameras have always been a popular type of sensor in
+    simultaneous localization and mapping (SLAM) applications. Images, however,
+    often suffer from light and environment changes. One typical limitation is
+    image saturation; sudden change in lighting conditions causes saturation in
+    the image and prohibits the algorithm from producing meaningful
+    measurements. In this paper, we introduce a stereo vision system with
+    different exposure values. Unlike other image processing approaches, we aim
+    to achieve instant saturation detection and fusion with no delay. When the
+    lighting condition change occurs, we detect the over or under-exposed
+    regions using entropy-based metrics and generate a restored image. The
+    proposed method has been validated using an indoor office environment and
+    outdoor parking lot in which the lighting condition is drastically changed.},
+    URL = {http://ieeexplore.ieee.org/document/7992661/}
+}
+
+@INPROCEEDINGS {jjeong-2017-iv,
+    AUTHOR = {Jinyong Jeong and Younggun Cho and Ayoung Kim},
+    TITLE = {{Road-SLAM} : Road Marking based {SLAM} with Lane-level Accuracy},
+    BOOKTITLE = {Proceedings of the IEEE Intelligent Vehicle Symposium},
+    YEAR = {2017},
+    MONTH = {Jun.},
+    ADDRESS = {Redondo Beach, CA},
+    TYPE = {conf},
+    PAGES = {1736--1473},
+    VIDEO = {https://youtu.be/Fjx7bIj7uuI},
+    FILE = {jjeong-2017-iv.pdf:jeong/jjeong-2017.pdf:PDF},
+    ABSTRACT = {In this paper, we propose the Road-SLAM algorithm, which
+    robustly exploits road markings obtained from camera images. Road markings
+    are well categorized and informative but susceptible to visual aliasing for
+    global localization. To enable loop-closures using road marking matching,
+    our method defines a feature consisting of road markings and surrounding
+    lanes as a sub-map. The proposed method uses random forest method to improve
+    the accuracy of matching using a sub-map containing road information. The
+    random forest classifies road markings into six classes and only
+    incorporates informative classes to avoid ambiguity. The proposed method is
+    validated by comparing the SLAM result with RTK- Global Positioning System
+    (GPS) data. Accurate loop detection improves global accuracy by compensating
+    for cumulative errors in odometry sensors. This method achieved an average
+    global accuracy of 1.098 m over 4.7 km of path length, while running at
+    real-time performance.},
+    URL = {http://ieeexplore.ieee.org/document/7995958/}
+}
 
 @INPROCEEDINGS {ycho-2017-icra,
     AUTHOR = {Younggun Cho and \uline{Ayoung Kim}},
@@ -617,7 +909,7 @@
     design modification, and related research enabled by this integration
     effort, are discussed herein.},
     FILE = {hbrown-2008a.pdf:brown/hbrown-2008a.pdf:PDF},
-    TYPE = {conf}, 
+    TYPE = {conf},
     URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5151880&ne
     wsearch=true&queryText=Development%20of%20a%20multi-%7BAUV%7D%20%7BSLAM%7D%2
     0testbed%20at%20the%20%7BUniversity%7D%20of%20%7BMichigan%7D}
@@ -697,4 +989,3 @@
     MONTH = {Dec.},
     ADDRESS = {Seoul, Korea},
 }
-
