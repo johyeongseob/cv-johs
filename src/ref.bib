@@ -1,0 +1,700 @@
+
+% JOURNALS
+%==========================================================
+@Article{hroh-2016-sensors,
+    AUTHOR = {Hyunchul Roh and Jinyong Jeong and Younggun Cho and \uline{Ayoung Kim}},
+    TITLE = {Accurate Mobile Urban Mapping via Digital Map-Based {SLAM}},
+    JOURNAL = {MDPI Sensors},
+    VOLUME = {16},
+    YEAR = {2016},
+    NUMBER = {8},
+    PAGES = {1315},
+    TYPE = {scie},
+    MONTH = {Aug.},
+    ABSTRACT = {This paper presents accurate urban map generation using digital map-based
+        Simultaneous Localization and Mapping (SLAM). Throughout this work, our main
+        objective is generating a 3D and lane map aiming for sub-meter accuracy. In
+        conventional mapping approaches, achieving extremely high accuracy was performed
+        by either (i) exploiting costly airborne sensors or (ii) surveying with a static
+        mapping system in a stationary platform. Mobile scanning systems recently have
+        gathered popularity but are mostly limited by the availability of the Global
+        Positioning System (GPS). We focus on the fact that the availability of GPS and
+        urban structures are both sporadic but complementary. By modeling both GPS and
+        digital map data as measurements and integrating them with other sensor
+        measurements, we leverage SLAM for an accurate mobile mapping system. Our
+        proposed algorithm generates an efficient graph SLAM and achieve framework
+        running in real-time and targeting sub-meter accuracy with a mobile platform.
+        Integrated with the SLAM framework, we implement a motion-adaptive model for the
+        Inverse Perspective Mapping (IPM). Using motion estimation derived from SLAM,
+        the experimental results show that the proposed approaches provide stable
+        bird’s-eye view images, even with significant motion during the drive. Our
+        real-time map generation framework is validated via a long-distance urban test
+        and evaluated at randomly sampled points using RTK-GPS.},
+    URL = {http://www.mdpi.com/1424-8220/16/8/1315}
+}
+
+@ARTICLE {scahve-2016a,
+    AUTHOR = {Stephen M. Chaves and \uline{Ayoung Kim} and Enric Galceran and Ryan M. Eustice},
+    TITLE = {Opportunistic sampling-based active visual {SLAM} for underwater inspection},
+    JOURNAL = {Autonomous Robots},
+    YEAR = {2016},
+    VOLUME = {40},
+    NUMBER = {7},
+    PAGES = {1245--1265},
+    TYPE = {sci},
+    MONTH = {Jul.},
+    ABSTRACT = {This paper reports on an active SLAM framework for performing
+    large-scale inspections with an underwater robot. We propose a path planning
+    algorithm integrated with visual SLAM that plans loop-closure paths in order
+    to decrease navigation uncertainty. While loop-closing revisit actions bound
+    the robot’s uncertainty, they also lead to redundant area coverage and
+    increased path length. Our proposed opportunistic framework leverages
+    sampling-based techniques and information filtering to plan revisit paths
+    that are coverage efficient. We employ Gaussian process regression for
+    modeling the prediction of camera registrations and use a two-step
+    optimization procedure for selecting revisit actions. We show that the
+    proposed method offers many benefits over existing solutions and good
+    performance for bounding navigation uncertainty in long-term autonomous
+    operations with hybrid simulation experiments and real-world field trials
+    performed by an underwater inspection robot.},
+    URL = {http://link.springer.com/article/10.1007/s10514-016-9597-6}
+}
+
+@ARTICLE {pozog-2016a,
+    AUTHOR = {Paul Ozog and Nicholas Carlevaris-Bianco and \uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Long-term mapping techniques for ship hull inspection and surveillance using an autonomous underwater vehicle},
+    JOURNAL = {Journal of Field Robotics, Special Issue on Safety, Security and Rescue Robotics},
+    YEAR = {2016},
+    VOLUME = {33},
+    NUMBER = {3},
+    PAGES = {265--289},
+    TYPE = {sci},
+    MONTH = {May.},
+    ABSTRACT = {This paper reports on a system for an autonomous underwater
+    vehicle to perform in-situ, multiple session, hull inspection using
+    long-term simultaneous localization and mapping (SLAM). Our method assumes
+    very little a-priori knowledge, and does not require the aid of acoustic
+    beacons for navigation, which is a typical mode of navigation in this type
+    of application. Our system combines recent techniques in underwater
+    saliency-informed visual SLAM and a method for representing the ship hull
+    surface as a collection of many locally planar surface features. This
+    methodology produces accurate maps that can be constructed in real-time on
+    consumer-grade computing hardware. A single-session SLAM result is initially
+    used as a prior map for later sessions, where the robot automatically merges
+    the multiple surveys into a common hull-relative reference frame. To perform
+    the re-localization step, we use a particle filter that leverages the
+    locally planar representation of the ship hull surface, and a fast visual
+    descriptor matching algorithm. Finally, we apply the recently-developed
+    graph sparsification tool, generic linear constraints (GLC), as a way to
+    manage the computational complexity of the SLAM system as the robot
+    accumulates information across multiple sessions. We show results for 20
+    SLAM sessions for two large vessels over the course of days, months, and
+    even up to three years, with a total path length of approximately 10.2 km.},
+    URL = {http://onlinelibrary.wiley.com/doi/10.1002/rob.21582/suppinfo}
+}
+
+@ARTICLE {akim-2015a,
+    AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Active Visual {SLAM} for Robotic Area Coverage: Theory and Experiment},
+    JOURNAL = {International Journal of Robotics Research, Special Issue on Robot Vision},
+    YEAR = {2015},
+    VOLUME = {34},
+    NUMBER = {4-5},
+    PAGES = {457--475},
+    MONTH = {Apr.},
+    ABSTRACT = {This paper reports on an integrated navigation algorithm for the
+    visual simultaneous localization and mapping (SLAM) robotic area coverage
+    problem. In the robotic area coverage problem, the goal is to explore and
+    map a given target area within a reasonable amount of time. This goal
+    necessitates the use of minimally redundant overlap trajectories for
+    coverage efficiency; however, visual SLAM's navigation estimate will
+    inevitably drift over time in the absence of loop closures. Therefore,
+    efficient area coverage and good SLAM navigation performance represent
+    competing objectives. To solve this decision-making problem, we introduce
+    perception-driven navigation, an integrated navigation algorithm that
+    automatically balances between exploration and revisitation using a reward
+    framework. This framework accounts for SLAM localization uncertainty, area
+    coverage performance, and the identification of good candidate regions in
+    the environment for visual perception. Results are shown for both a hybrid
+    simulation and real-world demonstration of a visual SLAM system for
+    autonomous underwater ship hull inspection.},
+    FILE = {akim-2014a.pdf:kim/akim-2014a.pdf:PDF},
+    ASSET1 = {akim-2015a-pdn_hybrid.mp4:Extension 1 Video - PDN Hybrid Simulation},
+    ASSET2 = {akim-2015a-pdn_real.mp4:Extension 2 Video - PDN Real-World Implementation},
+    TYPE = {sci},
+    URL = {http://journals.sagepub.com/doi/full/10.1177/0278364914547893}
+}
+
+@ARTICLE {akim-2013a,
+    AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Real-time visual {SLAM} for autonomous underwater hull inspection using visual saliency},
+    JOURNAL = {IEEE Transactions on Robotics},
+    YEAR = {2013},
+    MONTH = {Jun.},
+    VOLUME = {29},
+    NUMBER = {3},
+    PAGES = {719--733},
+    ABSTRACT = {This paper reports on a real-time monocular visual simultaneous
+    localization and mapping (SLAM) algorithm and results for its application in
+    the area of autonomous underwater ship hull inspection. The proposed
+    algorithm overcomes some of the specific challenges associated with
+    underwater visual SLAM, namely limited field of view imagery and
+    feature-poor regions. It does so by exploiting our SLAM navigation prior
+    within the image registration pipeline and by being selective about which
+    imagery is considered informative in terms of our visual SLAM map. A novel
+    online bag-of-words measure for intra- and inter-image saliency are
+    introduced, and are shown to be useful for image key-frame selection,
+    information-gain based link hypothesis, and novelty detection. Results from
+    three real-world hull inspection experiments evaluate the overall
+    approach---including one survey comprising a 3.4 hour / 2.7 km long
+    trajectory.},
+    FILE = {akim-2013a.pdf:kim/akim-2013a.pdf:PDF},
+    TYPE = {sci},
+    URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6410440}
+}
+
+@ARTICLE{fhover-2012a,
+    AUTHOR = {Franz S. Hover and Ryan M. Eustice and \uline{Ayoung Kim} and Brendan Englot and Hordur Johannsson and Michael Kaess and John J. Leonard},
+    TITLE = {Advanced perception, navigation and planning for autonomous in-water ship hull inspection},
+    JOURNAL = {International Journal of Robotics Research, Special Issue on 3D Exploration, Mapping, and Surveillance},
+    YEAR = {2012},
+    VOLUME = {31},
+    NUMBER = {12},
+    PAGES = {1445--1464},
+    MONTH = {Oct.},
+    ABSTRACT = {Inspection of ship hulls and marine structures using autonomous
+    underwater vehicles has emerged as a unique and challenging application of
+    robotics. The problem poses rich questions in physical design and operation,
+    perception and navigation, and planning, driven by difficulties arising from
+    the acoustic environment, poor water quality and the highly complex
+    structures to be inspected. In this paper, we develop and apply algorithms
+    for the central navigation and planning problems on ship hulls. These divide
+    into two classes, suitable for the open, forward parts of a typical
+    monohull, and for the complex areas around the shafting, propellers and
+    rudders. On the open hull, we have integrated acoustic and visual mapping
+    processes to achieve closed-loop control relative to features such as
+    weld-lines and biofouling. In the complex area, we implemented new
+    large-scale planning routines so as to achieve full imaging coverage of all
+    the structures, at a high resolution. We demonstrate our approaches in
+    recent operations on naval ships.},
+    FILE = {fhover-2012a.pdf:hover/fhover-2012a.pdf:PDF},
+    ASSET1 = {fhover-2012a.mp4:Extension 1 - Ship Hull Inspection Video},
+    TYPE = {sci},
+    URL = {http://ijr.sagepub.com/content/31/12/1445.abstract}
+}
+
+@ARTICLE{hbrown-2009a,
+    AUTHOR = {Hunter C. Brown and \uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {An overview of autonomous underwater vehicle research and testbed at {PeRL}},
+    JOURNAL = {Marine Technology Society Journal},
+    YEAR = {2009},
+    VOLUME = {43},
+    NUMBER = {2},
+    PAGES = {33--47},
+    ABSTRACT = {This article provides a general overview of the autonomous
+    underwater vehicle (AUV) research thrusts being pursued within the
+    Perceptual Robotics Laboratory (PeRL) at the University of Michigan. Founded
+    in 2007, PeRL's research centers on improving AUV autonomy via algorithmic
+    advancements in environmentally-based perceptual feedback for real-time
+    mapping, navigation, and control. Our three major research areas are: (1)
+    real-time visual simultaneous localization and mapping (SLAM); (2)
+    cooperative multi-vehicle navigation; and (3) perception-driven control.
+    Pursuant to these research objectives PeRL has developed a new multi-AUV
+    SLAM testbed based upon a modified Ocean-Server Iver2 AUV platform. PeRL
+    upgraded the vehicles with additional navigation and perceptual sensors for
+    underwater SLAM research. In this article we detail our testbed development,
+    provide an overview of our major research thrusts, and put into context how
+    our modified AUV testbed enables experimental real-world validation of these
+    algorithms.},
+    FILE = {hbrown-2009a.pdf:brown/hbrown-2009a.pdf:PDF},
+    TYPE = {scie}
+}
+
+
+% CONFERENCES
+%==========================================================
+
+@INPROCEEDINGS {ycho-2017-icra,
+    AUTHOR = {Younggun Cho and \uline{Ayoung Kim}},
+    TITLE = {Visibility Enhancement for Underwater Visual {SLAM} based on Underwater Light Scattering Model},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    YEAR = {2017},
+    MONTH = {May.},
+    ADDRESS = {Singapore},
+    TYPE = {conf},
+    NOTE = {Accepted. To appear.},
+    YOUTUBE = {https://youtu.be/GFgMdswWHAA}
+}
+
+% 2016 ------------------------------------------------------
+@INPROCEEDINGS {ykim-2016-iccas,
+    AUTHOR = {Youngji Kim and \uline{Ayoung Kim}},
+    TITLE = {Comparison of Point Feature Matching and Graph Matching for Underwater Scene Matching},
+    BOOKTITLE = {Proceedings of the International Conference on Control, Automation and Systems},
+    YEAR = {2016},
+    MONTH = {Oct.},
+    ADDRESS = {Gyeongju, S. Korea},
+    TYPE = {conf},
+}
+
+@INPROCEEDINGS {ykim-2016-iros,
+    AUTHOR = {Youngji Kim and Hwasup Lim and Sang Chul Ahn and \uline{Ayoung Kim}},
+    TITLE = {Simultaneous Segmentation, Estimation and Analysis of Articulated Motion from Dense Point Cloud Sequence},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    YEAR = {2016},
+    MONTH = {Sep.},
+    ADDRESS = {Daejeon, S. Korea},
+    TYPE = {conf},
+    PAGES = {1085--1092},
+    ABSTRACT = {In this paper, we present a unified approach for Expectation
+    Maximization (EM) based motion segmentation, estimation and analysis from
+    dense point cloud data. When identifying an underlying motion, literature
+    mainly focuses on three related topics: motion segmentation, estimation and
+    analysis. These topics are, however, mostly considered sepa- rately while
+    integrated approaches are rare. Our approach specifically focuses on
+    analyzing articulated motion from dense point cloud data by simultaneously
+    solving for three topics using an integrated approach. No prior knowledge,
+    such as background regions, number of segments and correspondence, is
+    required since two iterations in this algorithm allow us to seamlessly
+    accomplish integration of the three tasks. The first iteration of the
+    algorithm is performed between segmentation and estimation, followed by the
+    second iteration between motion estimation and analysis. For the first
+    iteration, we propose EM based subspace clustering algorithm. For the second
+    iteration, we simply fuse the motion analysis method from [1] into an
+    iterative motion estimation algorithm. As a result, we can extract label,
+    correspondence and motion of moving objects simultaneously from dense point
+    cloud sequence. In experiment, we validate the performance of the proposed
+    method on both synthetic and real world data.},
+    FILE = {ykim-2016-iros.pdf:kim/ykim-2016-iros.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7759184/}
+}
+
+
+@INPROCEEDINGS {dgwon-2016-oceans,
+    AUTHOR = {Dae-Hyeon Gwon and Young-Sik Shin and Youngji Kim and Yeongjun Lee and Hyun-Taek Choi and \uline{Ayoung Kim}},
+    TITLE = {Nontemporal Relative Pose Estimation for Opti-Acoustic Bundle Adjustment},
+    BOOKTITLE = {Proceedings of the IEEE/MTS OCEANS Conference and Exhibition},
+    YEAR = {2016},
+    MONTH = {Sep.},
+    ADDRESS = {Monterey, CA},
+    TYPE = {conf},
+    PAGES = {1--5},
+    ABSTRACT = {This paper presents the bundle adjustment (BA) between a sonar
+    and optical image for an Opti-Acoustic sensor model. An Opti-Acoustic sensor
+    model allows heterogeneous sensor fusion of an optical camera and acoustic
+    sonar that have a mutual supplementary relation. There are two challenges to
+    the Opti-Acoustic method. First, it is difficult to guarantee a common view
+    from the two significantly different sensor field of view. Second, it is
+    tough to figure out the correspondences between the camera and sonar image,
+    since those sensors have heterogeneous sensor geometries. This paper focuses
+    on the first issue by proposing asynchronously applicable relative motion
+    estimation via BA. For the second issue, we propose using a Dense Adaptive
+    Self-Correlation Descriptor (DASC) to establish correspondences between an
+    camera and optical a sonar image. The proposed Opti-Acoustic BA is validated
+    through autonomous underwater vehicle (AUV) simultaneous localization and
+    mapping (SLAM) in both simulated and real tank tests.},
+    FILE = {dgwon-2016-oceans.pdf:gwon/dgwon-2016-oceans.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7761110/}
+}
+
+@INPROCEEDINGS {ycho-2016-oceans,
+    AUTHOR = {Younggun Cho and Young-Sik Shin and \uline{Ayoung Kim}},
+    TITLE = {Online Depth Estimation and Application to Underwater Image Dehazing},
+    BOOKTITLE = {Proceedings of the IEEE/MTS OCEANS Conference and Exhibition},
+    YEAR = {2016},
+    MONTH = {Sep.},
+    ADDRESS = {Monterey, CA},
+    TYPE = {conf},
+    PAGES = {1--7},
+    ABSTRACT = {Underwater images captured in a turbid medium often suffer from
+    significant degradation of visibility. Conven- tional dehazing approaches
+    focus on dehazing a single image by using multiple channels for color
+    restoration and rarely consider computational efficiency. This paper
+    proposes an online dehazing method with sparse depth priors using an
+    incremental Gaussian Process (iGP). The main contribution of this paper is
+    developing a practically usable dehazing method for underwater robots using
+    incoming sparse depth priors (range measurements) from any calibrated depth
+    sensors. To deal with incoming depth priors efficiently, we adopt iGP for
+    incremental depth map estimation and dehazing. Because the input vector of
+    the iGP model is easily reconfigured, we can use the same update method for
+    both color and gray images. Our method also estimates color-balanced veiling
+    light to compensate for the color attenuation problem. For the evaluation,
+    we first verify the proposed method on a open RGBD dataset and test it on
+    real underwater color and gray images, comparing the results with those of
+    previous methods.},
+    FILE = {ycho-2016-oceans.pdf:cho/ycho-2016-oceans.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7761109/}
+}
+
+@INPROCEEDINGS {yshin-2016-oceans,
+    AUTHOR = {Young-Sik Shin and Younggun Cho and Gaurav Pandey and \uline{Ayoung Kim}},
+    TITLE = {Estimation of Ambient Light and Transmission Map with Common Convolutional Architecture},
+    BOOKTITLE = {Proceedings of the IEEE/MTS OCEANS Conference and Exhibition},
+    YEAR = {2016},
+    MONTH = {Sep.},
+    ADDRESS = {Monterey, CA},
+    TYPE = {conf},
+    PAGES = {1--7},
+    ABSTRACT = {This paper presents a method for effective ambient light and
+    transmission estimation in underwater images using a common convolutional
+    network architecture. The estimated ambient light and the transmission map
+    are used to dehaze the underwater images. Dehazing underwater images is
+    especially challenging due to the unknown and significantly varying ambient
+    light in underwater environments. Unlike common dehazing methods, the
+    proposed method is capable of estimating ambient light along with the
+    transmission map thereby improving the reconstruction quality of the dehazed
+    images. We evaluate the de- hazing performance of the proposed method on
+    real underwater images and also compare our method to current
+    state-of-the-art techniques.},
+    FILE = {yshin-2016-oceans.pdf:shin/yshin-2016-oceans.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7761342/},
+}
+
+@INPROCEEDINGS {jjeong-2016-urai,
+    AUTHOR = {Jinyong Jeong and \uline{Ayoung Kim}},
+    TITLE = {Adaptive Inverse Perspective Mapping for Lane map generation with {SLAM}},
+    BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
+    YEAR = {2016},
+    MONTH = {Aug.},
+    ADDRESS = {Xian, China},
+    TYPE = {conf},
+    PAGES = {38--41},
+    ABSTRACT = {This paper proposes an adaptive Inverse Perspective Mapping
+    (IPM) algorithm to obtain accurate bird’s-eye view images from the
+    sequential images of forward looking cameras. These images are often
+    distorted by the motion of the vehicle; even a small motion can cause a
+    substantial effect on bird’s- eye view images. In this paper, we propose an
+    adaptive model for the IPM to accurately transform camera images to bird’s-
+    eye view images by using motion information. Using motion derived from the
+    monocular visual simultaneous localization and mapping (SLAM), experimental
+    result shows that the proposed approaches can provide stable bird’s-eye view
+    images, even with large motion during the drive.},
+    FILE = {jjeong-2016-urai.pdf:jeong/jjeong-2016-urai.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7734016/}
+}
+
+% 2015 ------------------------------------------------------
+@INPROCEEDINGS {yshin-2015-oceans,
+    AUTHOR = {Young-Sik Shin and Yeongjun Lee and Hyun-Taek Choi and \uline{Ayoung Kim}},
+    TITLE = {Bundle Adjustment from Sonar Images and {SLAM} Application for Seafloor Mapping},
+    BOOKTITLE = {Proceedings of the IEEE/MTS OCEANS Conference and Exhibition},
+    YEAR = {2015},
+    MONTH = {Oct.},
+    ADDRESS = {Washington, DC},
+    PAGES = {1--6},
+    TYPE = {conf},
+    ABSTRACT = {This paper reports on two-view bundle adjustment using sonar
+    images, specifically focusing on feature detection and a sensor measurement
+    model for imaging sonar. To overcome limited sensor information for
+    underwater navigation, we use Dual frequency IDentification SONar (DIDSON)
+    in the imaging mode to provide spatial constraints when a scene is
+    revisited. Unlike terrestrial images, sonar images are usually low res-
+    olution with highly speckled noise. We found that exploiting features from
+    nonlinear scale space improves feature detection. In this paper, we adopt
+    KAZE features and use random sample consensus (RANSAC) to refine
+    correspondences. Using these correspondences, we propose point-based
+    relative pose estimation via bundle adjustment. The target application that
+    this work focuses on is underwater seafloor mapping, and the proposed model
+    assumes a fixed elevation. Through this work, we present (i) validation of
+    nonlinear scale space features for sonar images and (ii) proposal of a sonar
+    sensor measurement model for underwater simultaneous localization and
+    mapping (SLAM). The proposed method will be validated through both synthetic
+    data sets and a tank test for seafloor mapping.},
+    FILE = {yshin-2015-oceans.pdf:shin/yshin-2015-oceans.pdf:PDF},
+    URL = {http://ieeexplore.ieee.org/document/7401963/}
+}
+
+@INPROCEEDINGS {schave-2014a,
+    AUTHOR = {Stephen M. Chaves and \uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Opportunistic sampling-based planning for active visual {SLAM}},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    YEAR = {2014},
+    MONTH = {Sep.},
+    ADDRESS = {Chicago, IL, USA},
+    PAGES = {3073--3080},
+    ABSTRACT = {This paper reports on an active visual SLAM path planning
+    algorithm that plans loop-closure paths in order to decrease visual
+    navigation uncertainty. Loop-closing revisit actions bound the robot's
+    uncertainty but also contribute to redundant area coverage and increased
+    path length. We propose an opportunistic path planner that leverages
+    sampling-based techniques and information filtering for planning revisit
+    paths that are coverage efficient. Our algorithm employs Gaussian Process
+    regression for modeling the prediction of camera registrations and uses a
+    two-step optimization for selecting revisit actions. We show that the
+    proposed method outperforms existing solutions for bounding navigation
+    uncertainty with a hybrid simulation experiment using a real-world dataset
+    collected by a ship hull inspection robot.},
+    FILE = {schaves-2014b.pdf:chaves/schaves-2014b.pdf:PDF},
+    ASSET1 = {schaves-2014b.mp4:Overview Video},
+    TYPE = {conf},
+    URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6942987&newsearch=true&queryText=Opportunistic%20sampling-based%20planning%20for%20active%20visual%20SLAM}
+}
+
+@INPROCEEDINGS {akim-2013b,
+    AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Perception-driven navigation: Active visual {SLAM} for robotic area coverage},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    YEAR = {2013},
+    MONTH = {May.},
+    ADDRESS = {Karlsruhe, Germany},
+    PAGES = {3181--3188},
+    ABSTRACT = {This paper reports on an integrated navigation algorithm for the
+    visual simultaneous localization and mapping (SLAM) robotic area coverage
+    problem. In the robotic area coverage problem, the goal is to explore and
+    map a given target area in a reasonable amount of time. This goal
+    necessitates the use of minimally redundant overlap trajectories for
+    coverage efficiency; however, visual SLAM's navigation estimate will
+    inevitably drift over time in the absence of loop-closures. Therefore,
+    efficient area coverage and good SLAM navigation performance represent
+    competing objectives. To solve this decision-making problem, we introduce
+    perception-driven navigation (PDN), an integrated navigation algorithm that
+    automatically balances between exploration and revisitation using a reward
+    framework. This framework accounts for vehicle localization uncertainty,
+    area coverage performance, and the identification of good candidate regions
+    in the environment for loop-closure. Results are shown for a hybrid
+    simulation using synthetic and real imagery from an autonomous underwater
+    ship hull inspection application.},
+    FILE = {akim-2013b.pdf:kim/akim-2013b.pdf:PDF},
+    ASSET1 = {akim-2013b.mp4:Overview Video},
+    TYPE = {conf},
+    URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6631022&ne
+    wsearch=true&queryText=Perception-driven%20navigation:%20Active%20visual%20%
+    7BSLAM%7D%20for%20robotic%20area%20coverage}
+}
+
+@CONFERENCE {akim-2012a,
+    AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Next-best-view visual {SLAM} for bounded-error area coverage},
+    BOOKTITLE = {IROS Workshop on Active Semantic Perception},
+    YEAR = {2012},
+    MONTH = {Oct.},
+    ADDRESS = {Vilamoura, Portugal},
+    ABSTRACT = {Navigating an unexplored environment using simultaneous
+    localization and mapping (SLAM) requires that the robot's trajectory include
+    revisit actions in order to produce loop-closure constraints; however,
+    efficient area coverage requires that the robot's trajectory be minimally
+    redundant in its path. This paper reports on a next-best-view SLAM algorithm
+    that balances the trade-off between exploration and revisiting actions in
+    order to simultaneously achieve efficient target area coverage and
+    bounded-error navigation performance. Since area coverage efficiency and
+    bounded localization performance represent competing objectives, the
+    proposed algorithm computes the next-best control action required for
+    localization and area coverage performance. The proposed algorithm, called
+    perception-driven navigation (PDN), represents an integrated navigation
+    solution to the robotic area coverage problem whereupon visual SLAM
+    perception uncertainty is explicitly accounted for. Results are shown for
+    simulated monocular visual SLAM trajectories representative of the type of
+    area coverage problem encountered in autonomous underwater ship hull
+    inspection.},
+    FILE = {akim-2012a.pdf:kim/akim-2012a.pdf:PDF},
+    TYPE = {conf}
+}
+
+@INPROCEEDINGS {akim-2011a,
+    AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Combined visually and geometrically informative link hypothesis for pose-graph visual {SLAM} using bag-of-words},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    YEAR = {2011},
+    MONTH = {Sep.},
+    ADDRESS = {San Francisco, CA, USA},
+    PAGES = {1647--1654},
+    ABSTRACT = {This paper reports on a method to combine expected information
+    gain with visual saliency scores in order to choose geometrically and
+    visually informative loop-closure candidates for pose-graph visual
+    simultaneous localization and mapping (SLAM). Two different bag-of-words
+    saliency metrics are introduced---global saliency and local saliency. Global
+    saliency measures the rarity of an image throughout the entire data set,
+    while local saliency describes the amount of texture richness in an image.
+    The former is important in measuring an overall global saliency map for a
+    given area, and is motivated from inverse document frequency (a measure of
+    rarity) in information retrieval. Local saliency is defined by computing the
+    entropy of the bag-of-words histogram, and is useful to avoid adding
+    visually benign key frames to the map. The two different metrics are
+    presented and experimentally evaluated with indoor and underwater imagery to
+    verify their utility.},
+    FILE = {akim-2011a.pdf:kim/akim-2011a.pdf:PDF},
+    TYPE = {conf},
+    URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6094820&ne
+    wsearch=true&queryText=Combined%20visually%20and%20geometrically%20informati
+    ve%20link%20hypothesis%20for%20pose-graph%20visual%20%7BSLAM%7D%20using%20ba
+    g-of-words}
+}
+
+@INPROCEEDINGS {akim-2009a,
+    AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Toward {AUV} survey design for optimal coverage and localization using the cramer rao lower bound},
+    BOOKTITLE = {Proceedings of the IEEE/MTS OCEANS Conference and Exhibition},
+    YEAR = {2009},
+    MONTH = {Oct.},
+    ADDRESS = {Biloxi, MS, USA},
+    PAGES = {1--7},
+    ABSTRACT = {This paper discusses an approach to using the Cramer Rao Lower
+    Bound (CRLB) as a trajectory design tool for autonomous underwater vehicle
+    (AUV) visual navigation. We begin with a discussion of Fisher Information as
+    a measure of the lower bound of uncertainty in a simultaneous localization
+    and mapping (SLAM) pose-graph. Treating the AUV trajectory as an non-random
+    parameter, the Fisher information is calculated from the CRLB derivation,
+    and depends only upon path geometry and sensor noise. The effect of the
+    trajectory design parameters are evaluated by calculating the CRLB with
+    different parameter sets. Next, optimal survey parameters are selected to
+    improve the overall coverage rate while maintaining an acceptable level of
+    localization precision for a fixed number of pose samples. The utility of
+    the CRLB as a design tool in pre-planning an AUV survey is demonstrated
+    using a synthetic data set for a boustrophedon survey. In this
+    demonstration, we compare the CRLB of the improved survey plan with that of
+    an actual previous hull-inspection survey plan of the USS Saratoga. Survey
+    optimality is evaluated by measuring the overall coverage area and CRLB
+    localization precision for a fixed number of nodes in the graph. We also
+    examine how to exploit prior knowledge of environmental feature distribution
+    in the survey plan.},
+    FILE = {akim-2009b.pdf:kim/akim-2009b.pdf:PDF},
+    TYPE = {conf},
+    URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5422219&ne
+    wsearch=true&queryText=Toward%20%7BAUV%7D%20survey%20design%20for%20optimal%
+    20coverage%20and%20localization%20using%20the%20cramer%20rao%20lower%20bound
+   }
+}
+
+@INPROCEEDINGS {akim-2009b,
+    AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
+    TITLE = {Pose-graph visual {SLAM} with geometric model selection for autonomous underwater ship hull inspection},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    YEAR = {2009},
+    MONTH = {Oct.},
+    ADDRESS = {St. Louis, MO, USA},
+    PAGES = {1559--1565},
+    ABSTRACT = {This paper reports the application of vision based simultaneous
+    localization and mapping (SLAM) to the problem of autonomous ship hull
+    inspection by an underwater vehicle. The goal of this work is to
+    automatically map and navigate the underwater surface area of a ship hull
+    for foreign object detection and maintenance inspection tasks. For this
+    purpose we employ a pose-graph SLAM algorithm using an extended information
+    filter for inference. For perception, we use a calibrated monocular camera
+    system mounted on a tilt actuator so that the camera approximately maintains
+    a nadir view to the hull. A combination of SIFT and Harris features
+    detectors are used within a pairwise image registration framework to provide
+    camera-derived relative-pose constraints (modulo scale). Because the ship
+    hull surface can vary from being locally planar to highly three-dimensional
+    (e.g., screws, rudder), we employ a geometric model selection framework to
+    appropriately choose either an essential matrix or homography registration
+    model during image registration. This allows the image registration engine
+    to exploit geometry information at the early stages of estimation, which
+    results in better navigation and structure reconstruction via more accurate
+    and robust cameraconstraints. Preliminary results are reported for mapping a
+    1,300 image data set covering a 30 m by 5 m section of the hull of a USS
+    aircraft carrier. The post-processed result validates the algorithm's
+    potential to provide in-situ navigation in the underwater environment for
+    trajectory control, while generating a texture-mapped 3D model of the ship
+    hull as a by-product for inspection.},
+    FILE = {akim-2009a.pdf:kim/akim-2009a.pdf:PDF},
+    TYPE = {conf},
+    URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5354132&ne
+    wsearch=true&queryText=Pose-graph%20visual%20%7BSLAM%7D%20with%20geometric%2
+    0model%20selection%20for%20autonomous%20underwater%20ship%20hull%20inspectio
+    n}
+}
+
+@INPROCEEDINGS {hbrown-2008a,
+    AUTHOR = {Hunter Brown and \uline{Ayoung Kim} and Ryan Eustice},
+    TITLE = {Development of a multi-{AUV} {SLAM} testbed at the {University} of {Michigan}},
+    BOOKTITLE = {Proceedings of the IEEE/MTS OCEANS Conference and Exhibition},
+    YEAR = {2008},
+    MONTH = {Sep.},
+    ADDRESS = {Quebec City, Quebec, Canada},
+    PAGES = {1--6},
+    ABSTRACT = {This paper reports the modifications involved in preparing two
+    commercial Ocean-Server AUV systems for simultaneous localization and
+    mapping (SLAM) research at the University of Michigan (UMich). The UMich
+    Perceptual Robotics Laboratory (PeRL) upgraded the vehicles with additional
+    navigation and perceptual sensors including 12-bit stereo down-looking
+    Prosilica cameras, a Teledyne 600 kHz RDI Explorer DVL for 3-axis
+    bottom-lock velocity measurements, a KVH single-axis fiber-optic gyroscope
+    for yaw rate, and a WHOI Micromodem for communication, along with other
+    sensor packages discussed forthwith. To accommodate the additional sensor
+    payload, a new Delrin nose cone was designed and fabricated. Additional
+    32-bit embedded CPU hardware was added for data-logging, realtime control,
+    and in-situ real-time SLAM algorithm testing and validation. Details of the
+    design modification, and related research enabled by this integration
+    effort, are discussed herein.},
+    FILE = {hbrown-2008a.pdf:brown/hbrown-2008a.pdf:PDF},
+    TYPE = {conf}, 
+    URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5151880&ne
+    wsearch=true&queryText=Development%20of%20a%20multi-%7BAUV%7D%20%7BSLAM%7D%2
+    0testbed%20at%20the%20%7BUniversity%7D%20of%20%7BMichigan%7D}
+}
+
+@INPROCEEDINGS {reustice-2008b,
+      AUTHOR = {Ryan M. Eustice and Hunter C. Brown and \uline{Ayoung Kim}},
+      TITLE = {An overview of {AUV} algorithms research and testbed at the {University} of {Michigan}},
+      BOOKTITLE = {Proceedings of the IEEE/OES Autonomous Underwater Vehicles Conference},
+      YEAR = {2008},
+      MONTH = {Oct.},
+      ADDRESS = {Woods Hole, MA, USA},
+      PAGES = {1--9},
+      ABSTRACT = {This paper provides a general overview of the autonomous
+      underwater vehicle (AUV) research projects being pursued within the
+      Perceptual Robotics Laboratory (PeRL) at the University of Michigan.
+      Founded in 2007, PeRL's research thrust is centered around improving AUV
+      autonomy via algorithmic advancements in sensor-driven perceptual feedback
+      for environmentally-based real-time mapping, navigation, and control. In
+      this paper we discuss our three major research areas of: (1) real-time
+      visual simultaneous localization and mapping (SLAM); (2) cooperative
+      multi-vehicle navigation; and (3) perception-driven control. Pursuant to
+      these research objectives, PeRL has acquired and significantly modified
+      two commercial off-the-shelf (COTS) Ocean-Server Technology, Inc. Iver2
+      AUV platforms to serve as a real-world engineering testbed for algorithm
+      development and validation. Details of the design modification, and
+      related research enabled by this integration effort, are discussed
+      herein.},
+      TYPE = {conf},
+      URL = {http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5290531&
+      newsearch=true&queryText=An%20overview%20of%20%7BAUV%7D%20algorithms%20res
+      earch%20and%20testbed%20at%20the%20%7BUniversity%7D%20of%20%7BMichigan%7D%
+      20}
+}
+
+@INPROCEEDINGS {akim-2007a,
+    AUTHOR = {\uline{A-Young Kim} and Sitae Kim and Jay-Il Jeong and Jongwon Kim and F.C. Park},
+    TITLE = {Exploiting Redundant Actuation to Enhance the Static Stiffness of Parallel Mechanisms},
+    BOOKTITLE = {The 13th International Conference on Advanced Robotics},
+    YEAR = {2007},
+    MONTH = {Aug.},
+    ADDRESS = {Jeju, Korea},
+    TYPE = {conf}
+}
+
+% Domestic Journals
+%------------------------------------
+@Article{yshin-2016-kros,
+    AUTHOR = {신영식,이영준,최현택,김아영},
+    TITLE = {수중 영상 소나의 번들 조정과 3 차원 복원을 위한 운동 추정의 모호성에 관한 연구},
+    JOURNAL = {The Journal of Korea Robotics Society},
+    VOLUME = {11},
+    YEAR = {2016},
+    NUMBER = {2},
+    PAGES = {52--59},
+    TYPE = {korj},
+    MONTH = {Jun.},
+    URL = {https://www.dbpia.co.kr/Journal/ArticleDetail/NODE06726559}
+}
+
+% Dissertations
+%------------------------------------
+@PHDTHESIS {akim-phdthesis,
+    AUTHOR = {\uline{Ayoung Kim}},
+    TITLE = {Active visual {SLAM} with exploration for autonomous underwater navigation},
+    SCHOOL = {University of Michigan},
+    YEAR = {2012},
+    MONTH = {Aug.},
+    ADDRESS = {Ann Arbor, MI},
+}
+
+@MASTERSTHESIS {akim-msthesis,
+    AUTHOR = {\uline{Ayoung Kim}},
+    TITLE = {Stiffness Analysis and Hybrid Control for Parallel Manipulator},
+    SCHOOL = {Seoul National University},
+    YEAR = {2007},
+    MONTH = {Dec.},
+    ADDRESS = {Seoul, Korea},
+}
+

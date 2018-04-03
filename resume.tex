@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+            urlcolor=black}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+
+\usepackage[normalem]{ulem}
+
+\usepackage{ak_acronyms}
+
+\linespread{0.75}
+
+\begin{document}
+
+% Address and name
+%------------------------------------------------------
+203 NAME building \hfill \href{http://www-personal.umich.edu/$\sim$ayoungk/}{http://www-personal.umich.edu/$\sim$ayoungk/}\\
+2600 Draper Dr. \hfill \href{mailto:ayoungk@umich.edu}{ayoungk@umich.edu}\\
+Ann Arbor, MI 48109-2145 \hfill +1 (734)~$\cdot$~657~$\cdot$~8711\\
+
+\hfil{\namesize\bf Ayoung Kim}\hfil
+
+\input{src/education.tex}
+\input{src/research_exp_short.tex}
+\input{src/pubs.tex}
+\input{src/interest.tex}
+\input{src/awards.tex}
+
+\bibliographystyle{plain}
+\nobibliography{src/ref}
+
+
+\end{document}

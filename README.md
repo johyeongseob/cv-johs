@@ -1,2 +1,36 @@
 # cv-akim
-CV latex template
+CV latex template that I am using.
+
+## 1. Organization
+
+1) Two tex files are the main `cv.tex` and `resume.tex`.
+
+2) `*.sty` files define acronym used in the cv. Add your own acronym here.
+
+3) `src` folder contains each module. You can add or remove provided module here. Once you add or remove go to `cv.tex` or `resume.tex` and adjust `\input{*.tex}` list.
+
+4) Reference is handled in `src\ref.bib`. Add your bib item here and use it from `pubs.tex` by calling the bibkey. For example
+
+```
+\item \bibentry{ycho-2017-icra}
+```
+
+5) Yet I could not figure out how to make it work with Korean bib items in a bib file.
+
+한국어 bib아이템은 bib파일 안에 들어가면 이상하게 깨지는데 아직 원인을 찾지 못함. `pubs.tex`내에 한국어 bibitem은 따로 관리하는 중.
+
+## 2. Compile
+
+Run the following command
+
+```
+pdflatex cv.tex  
+bibtex cv.tex  
+pdflatex cv.tex  
+pdflatex cv.tex  
+```
+You may encounter the following error on the first time compile. Just repeat the `pdflatex`.
+
+```
+...and\NAT@force@numbers{}\NAT@force@numbers
+```

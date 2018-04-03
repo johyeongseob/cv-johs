@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{cv} % Use the custom resume.cls style
+
+% use UTF8 encoding
+\usepackage[utf8]{inputenc}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+            urlcolor=black}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+
+\usepackage[normalem]{ulem}
+
+\usepackage{ak_acronyms}
+
+
+\usepackage{kotex}
+
+% the below is to make domestic bib items to have bullet instead of [1]
+\makeatletter
+\renewcommand\@biblabel[1]{\textbullet}
+\makeatother
+
+\begin{document}
+
+% Address and name
+%------------------------------------------------------
+291 Daehak-ro \hfill \href{http://irap.kaist.ac.kr/$\sim$ayoung/}{http://irap.kaist.ac.kr/$\sim$ayoung/}\\
+Yuseong-gu \hfill \href{mailto:ayoungk@kaist.ac.kr}{ayoungk@kaist.ac.kr}\\
+Daejun, S. Korea \hfill +82 (42)~$\cdot$~350~$\cdot$~3632\\
+
+\hfil{\namesize\bf Ayoung Kim 김아영}\hfil
+
+%\input{bio.tex}
+\input{src/education.tex}
+\input{src/positions.tex}
+\input{src/interest.tex}
+\input{src/pubs.tex}
+\input{src/talks.tex}
+\input{src/grants.tex}
+%\input{src/research_exp.tex}
+\input{src/awards.tex}
+\input{src/membership.tex}
+\input{src/services.tex}
+%\input{src/skill.tex}
+%\input{src/poc_refs.tex}
+
+\bibliographystyle{plain}
+\nobibliography{src/ref}
+
+\vspace{0.5in}
+\hfill Revised \today
+\end{document}
