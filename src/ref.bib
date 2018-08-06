@@ -1,6 +1,57 @@
 
 % JOURNALS
 %==========================================================
+@Article{ycho-2018-jfr,
+    AUTHOR = {Younggun Cho and \uline{Ayoung Kim}},
+    TITLE = {Channel Invariant Online Visibility Enhancement for Visual SLAM in a Turbid Environment},
+    JOURNAL = {Journal of Field Robotics},
+    YEAR = {2018},
+    ABSTRACT = {This paper presents a real-time and channel-invariant visibility
+    enhancement algorithm us- ing a hybrid image enhancement approach. The proposed
+    method is initially motivated by an underwater visual simultaneous localization
+    and mapping (SLAM) failure in a tur- bid medium. The environments studied
+    contain various particles and are dominated by a different image degradation
+    model. Targeting image enhancement for degraded images but not being limited to
+    it, the proposed method provides a highly effective solution for both color and
+    gray images with substantial improvement in the process time compared to
+    conventional methods. The proposed method introduces a hybrid scheme of two
+    image en- hancement modules: a model-based (extensive) enhancement and a
+    model-free (immediate) enhancement. The proposed method is validated by using
+    simulated synthetic color images and real-world color and grayscale underwater
+    images. Real world validation is performed in various environments such as hazy
+    indoor, smoky indoor, and underwater. Using the ground truth trajectory or clear
+    images acquired from the same area but without turbid- ity, we evaluate the
+    proposed visibility enhancement and camera registration improvement for a
+    feature based (ORB-SLAM2), a direct (LSD-SLAM) and a visual underwater SLAM
+    application.},
+    NOTE = {Accepted. To appear.}
+}
+
+@Article{ycho-2018-ral,
+    AUTHOR = {Younggun Cho and Jinyong Jeong and \uline{Ayoung Kim}},
+    TITLE = {Model Assisted Multi-band Fusion for Single Image Enhancement and Applications to Robot Vision},
+    JOURNAL = {IEEE Robotics and Automation Letters (with IROS)},
+    YEAR = {2018},
+    VIDEO = {https://youtu.be/3Fk3kbaPkXQ},
+    ABSTRACT = {This paper presents a fast single image enhance- ment † that is
+    applicable regardless of channels in various environments. The main idea of the
+    paper is combining model- based and fusion-based dehazing methods, thereby
+    presenting balanced image enhancement while elaborating image details. The
+    proposed method enhances both color and grayscale images without any prior
+    information. Multi-band decomposition is utilized to extract the base and detail
+    layers for intensity and Laplacian modules. The proposed ambient map and
+    transmission estimation for the intensity module are effective in restoring the
+    true intensity. Adaptive nonlinear mapping functions adjust details on each
+    residual layer. Through color-corrected recon- struction, our results
+    demonstrate outstanding performance on various types of hazy images. The
+    proposed method is thoroughly validated in terms of conventional image quality
+    comparison. We also provide the evaluation at the application phase from both
+    the semantic (segmentation) and geometric (direct odometry) vision based
+    robotics application.},
+    URL = {https://ieeexplore.ieee.org/document/8370704/},
+    NOTE = {Accepted. To appear.}
+}
+
 @Article{hroh-2017-ral,
     AUTHOR = {Hyunchul Roh and Jinyong Jeong and \uline{Ayoung Kim}},
     TITLE = {Aerial Image based Heading Correction for Large Scale {SLAM} in an Urban Canyon},
@@ -247,6 +298,61 @@
 
 % CONFERENCES
 %==========================================================
+@INPROCEEDINGS {gkim-2018-iros,
+    AUTHOR = {Giseop Kim and \uline{Ayoung Kim}},
+    TITLE = {Scan Context: Egocentric Spatial Descriptor for Place Recognition within {3D} Point Cloud Map},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    YEAR = {2018},
+    MONTH = {Oct.},
+    ADDRESS = {Madrid},
+    TYPE = {conf},
+    ABSTRACT = {Compared to diverse feature detectors and de- scriptors used for
+    visual scenes, describing a place using struc- tural information is relatively
+    less reported. Recent advances in simultaneous localization and mapping (SLAM)
+    provides dense 3D maps of the environment and the localization is proposed by
+    diverse sensors. Toward the global localization based on the structural
+    information, we propose Scan Context, a non- histogram-based global descriptor
+    from 3D Light Detection and Ranging (LiDAR) scans. Unlike previously reported
+    methods, the proposed approach directly records a 3D structure of a visible
+    space from a sensor and does not rely on a histogram or on prior training. In
+    addition, this approach proposes the use of a similarity score to calculate the
+    distance between two scan contexts and also a two-phase search algorithm to
+    efficiently detect a loop. Scan context and its search algorithm make loop-
+    detection invariant to LiDAR viewpoint changes so that loops can be detected in
+    places such as reverse revisit and corner. Scan context performance has been
+    evaluated via various benchmark datasets of 3D LiDAR scans, and the proposed
+    method shows a sufficiently improved performance.},
+    NOTE = {Accepted. To appear},
+}
+
+@INPROCEEDINGS {ykim-2018-iros,
+    AUTHOR = {Youngji Kim and Jinyong Jeong and \uline{Ayoung Kim}},
+    TITLE = {Stereo Camera Localization in {3D LiDAR} Maps},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    YEAR = {2018},
+    MONTH = {Oct.},
+    ADDRESS = {Madrid},
+    TYPE = {conf},
+    ABSTRACT = {As simultaneous localization and mapping (SLAM) techniques have
+    flourished with the advent of 3D Light Detection and Ranging (LiDAR)
+    sensors, accurate 3D maps are readily available. Many researchers turn their
+    attention to localization in a previously acquired 3D map. In this paper, we
+    propose a novel and lightweight camera-only visual positioning algorithm
+    that involves localization within prior 3D LiDAR maps. We aim to achieve the
+    consumer level global positioning system (GPS) accuracy using vision within
+    the urban environment, where GPS signal is unreliable. Via exploiting a
+    stereo camera, depth from the stereo disparity map is matched with 3D LiDAR
+    maps. A full six degree of freedom (DOF) camera pose is estimated via
+    minimizing depth residual. Powered by visual tracking that provides a good
+    initial guess for the localization, the proposed depth residual is
+    successfully applied for camera pose estimation. Our method runs online, as
+    the average localization error is comparable to ones resulting from
+    state-of-the-art approaches. We validate the proposed method as a
+    stand-alone localizer using KITTI dataset and as a module in the SLAM
+    framework using our own dataset.},
+    NOTE = {Accepted. To appear},
+}
+
 @INPROCEEDINGS {jjeong-2018-icra,
     AUTHOR = {Jinyong Jeong and Younggun Cho and Young-Sik Shin and Hyunchul Roh and \uline{Ayoung Kim}},
     TITLE = {Complex Urban LiDAR Data Set},
