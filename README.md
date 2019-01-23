@@ -37,8 +37,7 @@ You may encounter the following error on the first time compile. Just repeat the
 
 ## 3. Korean CV
 
-cv.tex에 kor_only 라는 boolean 이 있어서 true 로 만들면 한글버전일때만 특정 라인을 보이게 할 수 있음. 
+cv.tex에 kor_only 라는 boolean 이 있어서 `true` 로 만들면 한글버전일때만 특정 라인을 보이게 할 수 있음. 
 ```
 \setboolean{kor}{false}
 ```
-true
