@@ -38,7 +38,11 @@
 
 \usepackage{ak_acronyms}
 
-
+% enable korean?
+\usepackage{ifthen}
+\newboolean{kor}
+\setboolean{kor}{false}
+\newcommand\koronly[1]{\ifthenelse{\boolean{kor}}{#1}}
 \usepackage{kotex}
 
 % the below is to make domestic bib items to have bullet instead of [1]
@@ -54,7 +58,8 @@
 Yuseong-gu \hfill \href{mailto:ayoungk@kaist.ac.kr}{ayoungk@kaist.ac.kr}\\
 Daejun, S. Korea \hfill +82 (42)~$\cdot$~350~$\cdot$~3632\\
 
-\hfil{\namesize\bf Ayoung Kim 김아영}\hfil
+%\hfil{\namesize\bf Ayoung Kim (김아영)}\hfil
+\hfil{\namesize\bf Ayoung Kim}\hfil
 
 %\input{bio.tex}
 \input{src/education.tex}
@@ -62,7 +67,7 @@ Daejun, S. Korea \hfill +82 (42)~$\cdot$~350~$\cdot$~3632\\
 \input{src/interest.tex}
 \input{src/pubs.tex}
 \input{src/talks.tex}
-\input{src/grants.tex}
+%\input{src/grants.tex}
 %\input{src/research_exp.tex}
 \input{src/awards.tex}
 \input{src/membership.tex}

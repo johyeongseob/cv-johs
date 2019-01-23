@@ -1,65 +1,102 @@
 
 % JOURNALS
 %==========================================================
+@Article{gkim-2019-ral,
+    AUTHOR = {Giseop Kim and Byungjae Park and \uline{Ayoung Kim}},
+    TITLE = {1-Day Learning, 1-Year Localization: Long-term {LiDAR} Localization using Scan Context Image},
+    JOURNAL = {IEEE Robotics and Automation Letters (RA-L)},
+    YEAR = {2019},
+    NOTE = {Accepted. To appear},
+}
+
+@Article{gkim-2019-ceus,
+    AUTHOR = {Giseop Kim and \uline{Ayoung Kim} and Youngchul Kim},
+    TITLE = {A new {3D} space syntax metric based on {3D} isovist capture in urban space using remote sensing technology},
+    JOURNAL = {Computers, Environment and Urban Systems},
+    YEAR = {2019},
+    NOTE = {In print},
+    VOLUME = {74},
+    PAGES = {74--87},
+    TYPE = {sci},
+    URL = {https://www.sciencedirect.com/science/article/pii/S0198971518301881}
+}
+
+@Article{shong-2018-jfr,
+    AUTHOR = {Seonghun Hong and Dongha Chung and Jinwhan Kim  and Youngji Kim  and \uline{Ayoung Kim}  and Hyeon Kyu Yoon},
+    TITLE = {In-Water Visual Ship Hull Inspection using a Hover-Capable Underwater Vehicle with Stereo Vision},
+    JOURNAL = {Journal of Field Robotics},
+    YEAR = {2018},
+    NOTE = {Accepted. To appear},
+    TYPE = {scie},
+    URL = {https://onlinelibrary.wiley.com/doi/full/10.1002/rob.21841},
+}
+
 @Article{ycho-2018-jfr,
     AUTHOR = {Younggun Cho and \uline{Ayoung Kim}},
     TITLE = {Channel Invariant Online Visibility Enhancement for Visual SLAM in a Turbid Environment},
     JOURNAL = {Journal of Field Robotics},
     YEAR = {2018},
     ABSTRACT = {This paper presents a real-time and channel-invariant visibility
-    enhancement algorithm us- ing a hybrid image enhancement approach. The proposed
+    enhancement algorithm using a hybrid image enhancement approach. The proposed
     method is initially motivated by an underwater visual simultaneous localization
-    and mapping (SLAM) failure in a tur- bid medium. The environments studied
+    and mapping (SLAM) failure in a turbid medium. The environments studied
     contain various particles and are dominated by a different image degradation
     model. Targeting image enhancement for degraded images but not being limited to
     it, the proposed method provides a highly effective solution for both color and
     gray images with substantial improvement in the process time compared to
     conventional methods. The proposed method introduces a hybrid scheme of two
-    image en- hancement modules: a model-based (extensive) enhancement and a
+    image enhancement modules: a model-based (extensive) enhancement and a
     model-free (immediate) enhancement. The proposed method is validated by using
     simulated synthetic color images and real-world color and grayscale underwater
     images. Real world validation is performed in various environments such as hazy
     indoor, smoky indoor, and underwater. Using the ground truth trajectory or clear
-    images acquired from the same area but without turbid- ity, we evaluate the
+    images acquired from the same area but without turbidity, we evaluate the
     proposed visibility enhancement and camera registration improvement for a
     feature based (ORB-SLAM2), a direct (LSD-SLAM) and a visual underwater SLAM
     application.},
-    NOTE = {Accepted. To appear.}
+    FILE = {ycho-2018-jfr.pdf:cho/ycho-2018-jfr.pdf:PDF},
+    VOLUME = {35},
+    NUMBER = {7},
+    PAGES = {1080--1100},
+    TYPE = {scie},
 }
 
 @Article{ycho-2018-ral,
     AUTHOR = {Younggun Cho and Jinyong Jeong and \uline{Ayoung Kim}},
     TITLE = {Model Assisted Multi-band Fusion for Single Image Enhancement and Applications to Robot Vision},
-    JOURNAL = {IEEE Robotics and Automation Letters (with IROS)},
+    JOURNAL = {IEEE Robotics and Automation Letters (RA-L) (with IROS)},
     YEAR = {2018},
     VIDEO = {https://youtu.be/3Fk3kbaPkXQ},
-    ABSTRACT = {This paper presents a fast single image enhance- ment † that is
+    ABSTRACT = {This paper presents a fast single image enhancement † that is
     applicable regardless of channels in various environments. The main idea of the
-    paper is combining model- based and fusion-based dehazing methods, thereby
+    paper is combining model-based and fusion-based dehazing methods, thereby
     presenting balanced image enhancement while elaborating image details. The
     proposed method enhances both color and grayscale images without any prior
     information. Multi-band decomposition is utilized to extract the base and detail
     layers for intensity and Laplacian modules. The proposed ambient map and
     transmission estimation for the intensity module are effective in restoring the
     true intensity. Adaptive nonlinear mapping functions adjust details on each
-    residual layer. Through color-corrected recon- struction, our results
+    residual layer. Through color-corrected reconstruction, our results
     demonstrate outstanding performance on various types of hazy images. The
     proposed method is thoroughly validated in terms of conventional image quality
     comparison. We also provide the evaluation at the application phase from both
     the semantic (segmentation) and geometric (direct odometry) vision based
     robotics application.},
     URL = {https://ieeexplore.ieee.org/document/8370704/},
-    NOTE = {Accepted. To appear.}
+    FILE = {ycho-2018-ral.pdf:cho/ycho-2018-ral.pdf:PDF},
+    VOLUME = {3},
+    NUMBER = {4},
+    PAGES = {2822--2829},
 }
 
 @Article{hroh-2017-ral,
     AUTHOR = {Hyunchul Roh and Jinyong Jeong and \uline{Ayoung Kim}},
     TITLE = {Aerial Image based Heading Correction for Large Scale {SLAM} in an Urban Canyon},
-    JOURNAL = {IEEE Robotics and Automation Letters (with IROS)},
+    JOURNAL = {IEEE Robotics and Automation Letters (RA-L) (with IROS)},
     YEAR = {2017},
     VOLUME = {2},
     NUMBER = {4},
-    PAGES = {2232 - 2239},
+    PAGES = {2232--2239},
     VIDEO = {https://youtu.be/gZ8ncdWBGEQ},
     ABSTRACT = {This paper presents an effective solution for 3D urban
     map generation using aerial images as prior information for Simultaneous
@@ -83,6 +120,7 @@
     availability and structural complexity: a downtown area with medium
     complexity, a building complex, and the downtown area of a large city.},
     URL = {http://ieeexplore.ieee.org/document/7973081/},
+    FILE = {hroh-2017-ral.pdf:roh/hroh-2017-ral.pdf:PDF},
 }
 
 @Article{hroh-2016-sensors,
@@ -298,20 +336,42 @@
 
 % CONFERENCES
 %==========================================================
+@INPROCEEDINGS {rmalav-2018-accv,
+    AUTHOR = {Ramavtar Malav and \uline{Ayoung Kim} and Soumya Ranjan Sahoo and Gaurav Pandey},
+    TITLE = {{DHSGAN}: An End to End Dehazing Network for Fog and Smoke},
+    BOOKTITLE = {Asian Conference of Computer Vision (ACCV)},
+    YEAR = {2018},
+    MONTH = {Dec.},
+    ADDRESS = {Perth},
+    TYPE = {conf},
+    ABSTRACT = {In this paper we propose a novel end-to-end convolution de-
+    hazing architecture, called De-Haze and Smoke GAN (DHSGAN). The
+    model is trained under a generative adversarial network framework to
+    effectively learn the underlying distribution of clean images for the gen-
+    eration of realistic haze-free images. We train the model on a dataset
+    that is synthesized to include image degradation scenarios from varied
+    conditions of fog, haze, and smoke in both indoor and outdoor settings.
+    Experimental results on both synthetic and natural degraded images
+    demonstrate that our method shows significant robustness over different
+    haze conditions in comparison to the state-of-the-art methods. A group
+    of studies are conducted to evaluate the effectiveness of each module of
+    the proposed method.},
+}
+
 @INPROCEEDINGS {gkim-2018-iros,
     AUTHOR = {Giseop Kim and \uline{Ayoung Kim}},
     TITLE = {Scan Context: Egocentric Spatial Descriptor for Place Recognition within {3D} Point Cloud Map},
-    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     YEAR = {2018},
     MONTH = {Oct.},
     ADDRESS = {Madrid},
     TYPE = {conf},
-    ABSTRACT = {Compared to diverse feature detectors and de- scriptors used for
-    visual scenes, describing a place using struc- tural information is relatively
+    ABSTRACT = {Compared to diverse feature detectors and descriptors used for
+    visual scenes, describing a place using structural information is relatively
     less reported. Recent advances in simultaneous localization and mapping (SLAM)
     provides dense 3D maps of the environment and the localization is proposed by
     diverse sensors. Toward the global localization based on the structural
-    information, we propose Scan Context, a non- histogram-based global descriptor
+    information, we propose Scan Context, a non-histogram-based global descriptor
     from 3D Light Detection and Ranging (LiDAR) scans. Unlike previously reported
     methods, the proposed approach directly records a 3D structure of a visible
     space from a sensor and does not rely on a histogram or on prior training. In
@@ -322,13 +382,14 @@
     places such as reverse revisit and corner. Scan context performance has been
     evaluated via various benchmark datasets of 3D LiDAR scans, and the proposed
     method shows a sufficiently improved performance.},
-    NOTE = {Accepted. To appear},
+    FILE = {gkim-2018-iros.pdf:kim/gkim-2018-iros.pdf:PDF},
+    PAGES = {4802--4809}
 }
 
 @INPROCEEDINGS {ykim-2018-iros,
     AUTHOR = {Youngji Kim and Jinyong Jeong and \uline{Ayoung Kim}},
     TITLE = {Stereo Camera Localization in {3D LiDAR} Maps},
-    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     YEAR = {2018},
     MONTH = {Oct.},
     ADDRESS = {Madrid},
@@ -350,25 +411,110 @@
     state-of-the-art approaches. We validate the proposed method as a
     stand-alone localizer using KITTI dataset and as a module in the SLAM
     framework using our own dataset.},
-    NOTE = {Accepted. To appear},
+    FILE = {ykim-2018-iros.pdf:kim/ykim-2018-iros.pdf:PDF},
+    PAGES = {1--9}
+}
+
+@INPROCEEDINGS {gkim-2018-icraws,
+    AUTHOR = {Giseop Kim and Byungjae Park and \uline{Ayoung Kim}},
+    TITLE = {Learning Scan Context toward Long-term LiDAR Localization},
+    BOOKTITLE = {ICRA Workshop on Long-term Autonomy and Deployment of Intelligent Robots in the Real-world},
+    YEAR = {2018},
+    MONTH = {May.},
+    ADDRESS = {Brisbane},
+    TYPE = {conf},
+    ABSTRACT = {We present a robust Light Detection and Ranging (LiDAR)-based place
+    descriptor called Scan Context Image (SCI) and a localization method that uses
+    this representation for long-term simultaneous localization and mapping (SLAM).
+    We formulate localization as a conventional supervised classification problem
+    using convolutional neural network (CNN), where a gridded place is considered as
+    a single class and SCIs acquired in that place are the corresponding data to the
+    class. The small (three layers in our work) network is trained with only a
+    single sequence from a single date, which has a total of 579 places and an
+    average 26 data per class. Despite these constraints, we show that a learned
+    network achieves sufficient performance in outdoor (top 5 average accuracy is
+    over 90%) on 13 other test sequences from different dates over 1 year with
+    varying environmental conditions.},
+    FILE = {gkim-2018-icraws.pdf:kim/gkim-2018-icraws.pdf:PDF},
+    URL = {https://sites.google.com/view/icra2018ltaws/home},
+    NOTE = {Best paper award}
+}
+
+@INPROCEEDINGS {ycho-2018-icraws,
+    AUTHOR = {Younggun Cho, Jinyong Jeong, Youngsik Shin and \uline{Ayoung Kim}},
+    TITLE = {DejavuGAN: Multi-temporal Image Translation toward Long-term Robot Autonomy},
+    BOOKTITLE = {ICRA Workshop on Long-term Autonomy and Deployment of Intelligent Robots in the Real-world},
+    YEAR = {2018},
+    MONTH = {May.},
+    ADDRESS = {Brisbane},
+    TYPE = {conf},
+    ABSTRACT = {In this paper, we present a multi-temporal image translation
+    network for long-term autonomy. Long-term navigation often suffers from
+    substantial appearance changes over time. This discrepancy in appearance yields
+    topological and metric localization failure. To overcome such limitations, we
+    propose a single and unified network that generates Dejavu of current scenes.
+    The proposed network synthesizes current scenes with target domains, such as
+    night, snow and fog. For the efficient management of database and Dejavu of
+    scenes, we utilize a discriminator to predict attribute differences of current
+    images and database images. In experimental results, we describe synthesized
+    images with various domains.},
+    FILE = {ycho-2018-icraws.pdf:cho/ycho-2018-icraws.pdf:PDF},
+    URL = {https://sites.google.com/view/icra2018ltaws/home},
+}
+
+@INPROCEEDINGS {jjeong-2018-ur,
+    AUTHOR = {Jinyong Jeong and \uline{Ayoung Kim}},
+    TITLE = {LiDAR Intensity Calibration for Road Marking Extraction},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Ubiquitous Robots (UR)},
+    YEAR = {2018},
+    MONTH = {Jun.},
+    ADDRESS = {Honolulu},
+    TYPE = {conf},
+    FILE = {jjeong-2018-ur.pdf:jeong/jjeong-2018-ur.pdf:PDF},
+    ABSTRACT = {The rising demand for precise three-dimensional
+    (3D) maps is a result of the growth of autonomous vehicles
+    into a major focus. These precise 3D maps are often created
+    using Mobile Mapping System (MMS) instruments equipped
+    with various sensors. Among these sensors, Light Detection
+    and Ranging (LiDAR) is the most widely adopted sensor for
+    the generation of 3D maps. This paper describes the intensity
+    calibration process for 3D LiDAR sensors installed on MMS.
+    A typical LiDAR sensor measures the distance to an object in
+    addition to intensity, which is the magnitude of the reflection
+    from the surface of an object. Physically, the value of intensity
+    depends on three factors: reflectance, the distance from the
+    surface, and the angle of incidence. Therefore, the intensity
+    values of road markings with the same reflectance may result
+    in different intensity values depending on distance and angle
+    of incidence. The method proposed in this paper aims to
+    correct the measured intensity value of objects to ensure the
+    measurements of the same object reports the same intensity
+    value. To solve this issue, the intensity characteristic of each
+    sensor with regards to a reference surface was exploited and the
+    reflectance of the surface was estimated. The calibration result
+    was validated via road marking extraction with Otsu threshold
+    method.},
+    URL = {https://ieeexplore.ieee.org/document/8441893},
+    Pages = {455--460}
+
 }
 
 @INPROCEEDINGS {jjeong-2018-icra,
     AUTHOR = {Jinyong Jeong and Younggun Cho and Young-Sik Shin and Hyunchul Roh and \uline{Ayoung Kim}},
     TITLE = {Complex Urban LiDAR Data Set},
-    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
     YEAR = {2018},
     MONTH = {May.},
     ADDRESS = {Brisbane},
     TYPE = {conf},
     FILE = {jjeong-2018-icra.pdf:jeong/jjeong-2018-icra.pdf:PDF},
-    ABSTRACT = {This paper presents a Light Detection and Rang- ing (LiDAR) data
+    ABSTRACT = {This paper presents a Light Detection and Ranging (LiDAR) data
     set that targets complex urban environments. Urban environments with
     high-rise buildings and congested traffic pose a significant challenge for
-    many robotics appli- cations. The presented data set is unique in the sense
+    many robotics applications. The presented data set is unique in the sense
     it is able to capture the genuine features of an urban environment (e.g.
-    metropolitan areas, large building complexes and under- ground parking
-    lots). Data of two-dimensional (2D) and three- dimensional (3D) LiDAR, which
+    metropolitan areas, large building complexes and underground parking
+    lots). Data of two-dimensional (2D) and three-dimensional (3D) LiDAR, which
     are typical types of LiDAR sensors, are provided in the data set. The two
     16-ray 3D LiDARs are tilted on both sides for maximal coverage. One 2D LiDAR
     faces backward while the other faces forwards to collect data of roads and
@@ -382,19 +528,20 @@
     full data sets are available at: http://irap.kaist.ac.kr/dataset. In this
     website, 3D preview of each data set is provided using WebGL.},
     VIDEO = {https://youtu.be/IguZjmLf5V0},
-    NOTE = {Accepted. To appear},
+    Pages = {6344--6351},
+    URL = {https://ieeexplore.ieee.org/document/8460834},
 }
 
 @INPROCEEDINGS {jkim-2018-icra,
     AUTHOR = {Joowan Kim and Younggun Cho and \uline{Ayoung Kim}},
     TITLE = {Exposure Control using Bayesian Optimization based on Entropy Weighted Image Gradient},
-    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
     YEAR = {2018},
     MONTH = {May.},
     ADDRESS = {Brisbane},
     FILE = {jwkim-2018-icra.pdf:kim/jwkim-2018-icra.pdf:PDF},
     TYPE = {conf},
-    ABSTRACT = {Under- and oversaturation can cause severe im- age degradation
+    ABSTRACT = {Underand oversaturation can cause severe image degradation
     in many vision-based robotic applications. To control camera exposure in
     dynamic lighting conditions, we introduce a novel metric for image
     information measure. Measuring an image gradient is typical when evaluating
@@ -410,25 +557,26 @@
     information measure and exposure control scheme via a series of thorough
     experiments using various exposure conditions.},
     VIDEO = {https://youtu.be/mq0ZUy7Z0JE},
-    NOTE = {Accepted. To appear},
+    Pages = {857--864},
+    URL = {https://ieeexplore.ieee.org/document/8462881},
 }
 
 @INPROCEEDINGS {yshin-2018-icra,
     AUTHOR = {Young-Sik Shin and Yeong Sang Park and \uline{Ayoung Kim}},
     TITLE = {Direct Visual SLAM using Sparse Depth for Camera-LiDAR System},
-    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
     YEAR = {2018},
     MONTH = {May.},
     ADDRESS = {Brisbane},
     TYPE = {conf},
     FILE = {yshin-2018-icra.pdf:shin/yshin-2018-icra.pdf:PDF},
     ABSTRACT = {This paper describes a framework for direct visual simultaneous
-    localization and mapping (SLAM) com- bining a monocular camera with sparse
+    localization and mapping (SLAM) combining a monocular camera with sparse
     depth information from Light Detection and Ranging (LiDAR). To ensure real-
     time performance while maintaining high accuracy in motion estimation, we
     present (i) a sliding window-based tracking method, (ii) strict pose
     marginalization for accurate pose-graph SLAM and (iii) depth-integrated
-    frame matching for large- scale mapping. Unlike conventional feature-based
+    frame matching for large-scale mapping. Unlike conventional feature-based
     visual and LiDAR mapping, the proposed approach is direct, eliminating the
     visual feature in the objective function. We evaluated results using our
     portable camera-LiDAR system as well as KITTI odometry benchmark datasets.
@@ -437,9 +585,11 @@
     Via validation, we achieved low drift error of 0.98% in the KITTI benchmark
     including various environments such as a highway and residential areas.},
     VIDEO = {https://youtu.be/swN3oRj5WEg},
-    NOTE = {Accepted. To appear},
+    Pages = {1--8},
+    URL = {https://ieeexplore.ieee.org/document/8461102}
 }
 
+% 2017 ------------------------------------------------------
 @INPROCEEDINGS {alee-2017-iccas,
     AUTHOR = {Alex J. Lee and \uline{Ayoung Kim}},
     TITLE = {Event-Based Real-time Optical Flow Estimation},
@@ -448,6 +598,8 @@
     MONTH = {Oct.},
     ADDRESS = {Jeju, S. Korea},
     TYPE = {conf},
+    URL = {https://ieeexplore.ieee.org/document/8204333/},
+    FILE = {alee-2017-iccas.pdf:lee/alee-2017-iccas.pdf:PDF},
     ABSTRACT = {In this paper, we introduce a novel approach defining feature and
     its descriptor with an event-based sensor.The event-based vision sensors detect
     partial intensity changes with high timing resolution, making conventional
@@ -460,9 +612,9 @@
 }
 
 @INPROCEEDINGS {ykim-2017-iros,
-    AUTHOR = {Youngji Kim and Ayoung Kim},
+    AUTHOR = {Youngji Kim and \uline{Ayoung Kim}},
     TITLE = {On the Uncertainty Propagation: Why Uncertainty on Lie Groups Preserves Monotonicity?},
-    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     YEAR = {2017},
     MONTH = {Sep.},
     ADDRESS = {Vancouver, Canada},
@@ -486,7 +638,7 @@
 }
 
 @INPROCEEDINGS {mars-2017-urai,
-    AUTHOR = {Joowan Kim and Jinyong Jeong and Young-Sik Shin and Younggun Cho and Hyunchul Roh and Ayoung Kim},
+    AUTHOR = {Joowan Kim and Jinyong Jeong and Young-Sik Shin and Younggun Cho and Hyunchul Roh and \uline{Ayoung Kim}},
     TITLE = {{LiDAR} Configuration Comparison for Urban Mapping System},
     BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
     YEAR = {2017},
@@ -513,7 +665,7 @@
 }
 
 @INPROCEEDINGS {yspark-2017-urai,
-    AUTHOR = {Yeong Sang Park and Ayoung Kim and Young Sam Lee},
+    AUTHOR = {Yeong Sang Park and \uline{Ayoung Kim} and Young Sam Lee},
     TITLE = {Path Planning using Flexible Region Sampling for Arbitrarily-Shaped Obstacles},
     BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
     YEAR = {2017},
@@ -538,7 +690,7 @@
 }
 
 @INPROCEEDINGS {dgwon-2017-urai,
-    AUTHOR = {Dae-Hyeon Gwon and Joowan Kim and Moon Hwan Kim and Ho Gyu Park and Tae Yeong Kim, Ayoung Kim},
+    AUTHOR = {Dae-Hyeon Gwon and Joowan Kim and Moon Hwan Kim and Ho Gyu Park and Tae Yeong Kim, \uline{Ayoung Kim}},
     TITLE = {Development of a Side Scan Sonar Module for the UnderWater Simulator},
     BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
     YEAR = {2017},
@@ -560,7 +712,7 @@
 }
 
 @INPROCEEDINGS {jwkim-2017-urai,
-    AUTHOR = {Joowan Kim and Ayoung Kim},
+    AUTHOR = {Joowan Kim and \uline{Ayoung Kim}},
     TITLE = {Light Condition Invariant Visual {SLAM} via Entropy based Image Fusion},
     BOOKTITLE = {Proceedings of the IEEE Ubiquitous Robots and Ambient Intelligence (URAI)},
     YEAR = {2017},
@@ -585,7 +737,7 @@
 }
 
 @INPROCEEDINGS {jjeong-2017-iv,
-    AUTHOR = {Jinyong Jeong and Younggun Cho and Ayoung Kim},
+    AUTHOR = {Jinyong Jeong and Younggun Cho and \uline{Ayoung Kim}},
     TITLE = {{Road-SLAM} : Road Marking based {SLAM} with Lane-level Accuracy},
     BOOKTITLE = {Proceedings of the IEEE Intelligent Vehicle Symposium},
     YEAR = {2017},
@@ -615,13 +767,31 @@
 @INPROCEEDINGS {ycho-2017-icra,
     AUTHOR = {Younggun Cho and \uline{Ayoung Kim}},
     TITLE = {Visibility Enhancement for Underwater Visual {SLAM} based on Underwater Light Scattering Model},
-    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
     YEAR = {2017},
     MONTH = {May.},
     ADDRESS = {Singapore},
     TYPE = {conf},
-    NOTE = {Accepted. To appear.},
-    YOUTUBE = {https://youtu.be/GFgMdswWHAA}
+    PAGES = {710--717},
+    COMMENT = {In Eqation 2 and following equations, forward and back scattering are swapped. The corrected version of the paper is available in this page.},
+    VIDEO = {https://youtu.be/GFgMdswWHAA},
+    FILE = {ycho-2017-icra.pdf:cho/ycho-2017-icra.pdf:PDF},
+    CODE = {https://github.com/irapkaist/visibility_enhancement},
+    ABSTRACT = {This paper presents a real-time visibility enhancement algorithm
+    for effective underwater visual simultaneous localization and mapping (SLAM).
+    Unlike an aerial environment, an underwater environment contains larger
+    particles and is dominated by a different image degradation model. Our method
+    starts with a thorough understanding of underwater particle physics (e.g.,
+    forward, back, multiple scattering, blur and noise). Targeting underwater image
+    enhancement in a real-world application, we include an artificial light model
+    in the derivation. The proposed method is effective for both color and gray
+    images with substantial improvement in the process time compared to conventional
+    methods. The proposed method is validated by using simulated synthetic images
+    (color) and real-world underwater images (color and grayscale). Using two
+    underwater image sets acquired from the same area but with different water
+    turbidity, we evaluate the proposed visibility enhancement and camera
+    registration improvement in SLAM.},
+    URL = {http://ieeexplore.ieee.org/document/7989087/}
 }
 
 % 2016 ------------------------------------------------------
@@ -633,12 +803,17 @@
     MONTH = {Oct.},
     ADDRESS = {Gyeongju, S. Korea},
     TYPE = {conf},
+    ABSTRACT = {Matching scenes observed from different views is essential for the
+    vision-based robotic navigation system.In this paper we compare the performance
+    of two scene matching approaches–point-based feature matching and graphmatching
+    (GM). We analyze the results of GM and point-based feature matching and
+    investigate the viability of GM forunderwater scene matching.}
 }
 
 @INPROCEEDINGS {ykim-2016-iros,
     AUTHOR = {Youngji Kim and Hwasup Lim and Sang Chul Ahn and \uline{Ayoung Kim}},
     TITLE = {Simultaneous Segmentation, Estimation and Analysis of Articulated Motion from Dense Point Cloud Sequence},
-    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     YEAR = {2016},
     MONTH = {Sep.},
     ADDRESS = {Daejeon, S. Korea},
@@ -648,7 +823,7 @@
     Maximization (EM) based motion segmentation, estimation and analysis from
     dense point cloud data. When identifying an underlying motion, literature
     mainly focuses on three related topics: motion segmentation, estimation and
-    analysis. These topics are, however, mostly considered sepa- rately while
+    analysis. These topics are, however, mostly considered separately while
     integrated approaches are rare. Our approach specifically focuses on
     analyzing articulated motion from dense point cloud data by simultaneously
     solving for three topics using an integrated approach. No prior knowledge,
@@ -705,7 +880,7 @@
     TYPE = {conf},
     PAGES = {1--7},
     ABSTRACT = {Underwater images captured in a turbid medium often suffer from
-    significant degradation of visibility. Conven- tional dehazing approaches
+    significant degradation of visibility. Conventional dehazing approaches
     focus on dehazing a single image by using multiple channels for color
     restoration and rarely consider computational efficiency. This paper
     proposes an online dehazing method with sparse depth priors using an
@@ -761,7 +936,7 @@
     (IPM) algorithm to obtain accurate bird’s-eye view images from the
     sequential images of forward looking cameras. These images are often
     distorted by the motion of the vehicle; even a small motion can cause a
-    substantial effect on bird’s- eye view images. In this paper, we propose an
+    substantial effect on bird’seye view images. In this paper, we propose an
     adaptive model for the IPM to accurately transform camera images to bird’s-
     eye view images by using motion information. Using motion derived from the
     monocular visual simultaneous localization and mapping (SLAM), experimental
@@ -805,7 +980,7 @@
 @INPROCEEDINGS {schave-2014a,
     AUTHOR = {Stephen M. Chaves and \uline{Ayoung Kim} and Ryan M. Eustice},
     TITLE = {Opportunistic sampling-based planning for active visual {SLAM}},
-    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     YEAR = {2014},
     MONTH = {Sep.},
     ADDRESS = {Chicago, IL, USA},
@@ -831,7 +1006,7 @@
 @INPROCEEDINGS {akim-2013b,
     AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
     TITLE = {Perception-driven navigation: Active visual {SLAM} for robotic area coverage},
-    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
     YEAR = {2013},
     MONTH = {May.},
     ADDRESS = {Karlsruhe, Germany},
@@ -891,7 +1066,7 @@
 @INPROCEEDINGS {akim-2011a,
     AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
     TITLE = {Combined visually and geometrically informative link hypothesis for pose-graph visual {SLAM} using bag-of-words},
-    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     YEAR = {2011},
     MONTH = {Sep.},
     ADDRESS = {San Francisco, CA, USA},
@@ -956,7 +1131,7 @@
 @INPROCEEDINGS {akim-2009b,
     AUTHOR = {\uline{Ayoung Kim} and Ryan M. Eustice},
     TITLE = {Pose-graph visual {SLAM} with geometric model selection for autonomous underwater ship hull inspection},
-    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems},
+    BOOKTITLE = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
     YEAR = {2009},
     MONTH = {Oct.},
     ADDRESS = {St. Louis, MO, USA},
