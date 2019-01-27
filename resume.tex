@@ -35,6 +35,13 @@
 
 \usepackage{ak_acronyms}
 
+% enable korean?
+\usepackage{ifthen}
+\newboolean{kor}
+\setboolean{kor}{false}
+\newcommand\koronly[1]{\ifthenelse{\boolean{kor}}{#1}}
+\usepackage{kotex}
+
 \linespread{0.75}
 
 \begin{document}
