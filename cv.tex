@@ -28,7 +28,9 @@
 
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,
-            urlcolor=blue}
+            linkcolor=black,
+            urlcolor=blue,
+            citecolor=gray}
 
 \usepackage{natbib}
 \usepackage{bibentry}
@@ -41,7 +43,7 @@
 % enable korean?
 \usepackage{ifthen}
 \newboolean{kor}
-\setboolean{kor}{false}
+\setboolean{kor}{true}
 \newcommand\koronly[1]{\ifthenelse{\boolean{kor}}{#1}}
 \usepackage{kotex}
 
@@ -59,18 +61,19 @@
 Yuseong-gu \hfill +82 (42)~$\cdot$~350~$\cdot$~3632\\
 Daejun, S. Korea \hfill \href{https://scholar.google.com/citations?user=7yveufgAAAAJ&hl=en}{Google Scholar}\\
 
-%\hfil{\namesize\bf Ayoung Kim (김아영)}\hfil
-\hfil{\namesize\bf Ayoung Kim}\hfil
+\hfil{\namesize\bf Ayoung Kim (김아영)}\hfil
+%\hfil{\namesize\bf Ayoung Kim}\hfil
 
 %\input{bio.tex}
 \input{src/education.tex}
 \input{src/positions.tex}
 \input{src/interest.tex}
+\input{src/teaching.tex}
 \input{src/pubs.tex}
-\input{src/talks.tex}
-%\input{src/grants.tex}
-%\input{src/research_exp.tex}
+\input{src/patents.tex}
+
 \newpage
+\input{src/talks.tex}
 \input{src/awards.tex}
 \input{src/membership.tex}
 \input{src/services.tex}
