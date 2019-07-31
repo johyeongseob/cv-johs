@@ -41,3 +41,22 @@ cv.tex에 kor_only 라는 boolean 이 있어서 `true` 로 만들면 한글버�
 ```
 \setboolean{kor}{false}
 ```
+
+## 4. Privatization of the partial CV
+
+By cloning this public repo and adding remote, you can partially privatize the cv.
+
+https://stackoverflow.com/questions/7983204/having-a-private-branch-of-a-public-repo-on-github
+
+Make a private repo. For example, `cv-akim-confidential`.
+
+```
+git clone --bare https://ayoungk@github.com/ayoungk/cv-akim.git
+cd cv-akim
+git push --mirror  https://ayoungk@github.com/ayoungk/cv-akim-confidential.git
+```
+
+Then clone this private clone `cv-akim-confidential` and add remote
+```
+git remote add public  https://ayoungk@github.com/ayoungk/cv-akim.git
+```
