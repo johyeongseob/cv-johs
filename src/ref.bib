@@ -1,12 +1,21 @@
 
 % JOURNALS
 %==========================================================
-@Article{jkim-2019-tro,
+@Article{jkim-2020-tro,
     AUTHOR = {Joowan Kim and Younggun Cho and \uline{Ayoung Kim}},
     TITLE = {Proactive Camera Attribute Control using Bayesian Optimization for Illumination-Resilient Visual Navigation},
     JOURNAL = {IEEE Transactions on Robotics},
-    YEAR = {2019},
-    NOTE = {Submitted. Under review.}
+    YEAR = {2020},
+    NOTE = {Accepted. To appear.}
+}
+
+@Article{ycho-2020-ijcas,
+    AUTHOR = {Younggun Cho and Hyesu Jang and Ramavtar Malav and Gaurav Pandey and \uline{Ayoung Kim}},
+    TITLE = {Underwater Image Dehazing via Unpaired Image-to-image Translation},
+    JOURNAL = {International Journal of Control, Automation and Systems},
+    YEAR = {2020},
+    TYPE = {scie},
+    NOTE = {Accepted. To appear.}
 }
 
 @Article{yshin-2019-ar,
@@ -213,6 +222,89 @@
 
 % CONFERENCES
 %==========================================================
+@INPROCEEDINGS {yspark-2020-ur,
+    AUTHOR = {Yeong Sang Park and Hyesu Jang and \uline{Ayoung Kim}},
+    TITLE = {I-LOAM: Intensity Enhanced LiDAR Odometry and Mapping},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Ubiquitous Robots (UR)},
+    YEAR = {2020},
+    MONTH = {Jun.},
+    ADDRESS = {Kyoto},
+    TYPE = {conf},
+    NOTE = {Accepted. To appear.},
+    FILE = {yspark-2020-ur.pdf}
+    }
+
+@INPROCEEDINGS {gskim-2020-icra,
+    AUTHOR = {Giseop Kim and Yeong Sang Park and Younghun Cho and Jinyong Jeong and \uline{Ayoung Kim}},
+    TITLE = {MulRan: Multimodal Range Dataset for Urban Place Recognition},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+    YEAR = {2020},
+    MONTH = {May},
+    ADDRESS = {Paris},
+    TYPE = {conf},
+    NOTE = {Accepted. To appear.},
+    CODE = {https://sites.google.com/view/mulran-pr},
+    ABSTRACT ={This paper introduces a multimodal range dataset namely for radio
+    detection and ranging (radar) and light detection and ranging (LiDAR)
+    specifically targeting the urban environment. By extending our workshop
+    paper to a larger scale, this dataset focuses on the range sensor-based
+    place recognition and provides 6D baseline trajectories of a vehicle for
+    place recognition ground truth. Provided radar data support both raw-level
+    and image-format data, including a set of time-stamped 1D intensity arrays and
+    360 polar images, respectively. In doing so, we provide flexibility between
+    raw data and image data depending on the purpose of the research. Unlike
+    existing datasets, our focus is at capturing both temporal and structural
+    diversities for range-based place recognition research. For evaluation,
+    we applied and validated that our previous location descriptor and its search
+    algorithm are highly effective for radar place recognition method. Furthermore,
+    the result shows that radar-based place recognition outperforms LiDAR-based one
+    exploiting its longer-range measurements. The dataset is available from
+    https://sites.google.com/view/mulran-pr},
+    VIDEO = {https://www.youtube.com/watch?v=uU-FC-GmHXA},
+    FILE = {gskim-2020-icra.pdf},
+}
+
+@INPROCEEDINGS {ycho-2020-icra,
+    AUTHOR = {Younggun Cho and Giseop Kim and \uline{Ayoung Kim}},
+    TITLE = {Unsupervised Geometry-Aware Deep LiDAR Odometry},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+    YEAR = {2020},
+    MONTH = {May},
+    ADDRESS = {Paris},
+    TYPE = {conf},
+    NOTE = {Accepted. To appear.},
+    ABSTRACT = {Learning-based ego-motion estimation approaches have recently
+    drawn strong interest from researchers, mostly focusing on visual
+    perception. A few learning-based approaches using Light Detection and
+    Ranging (LiDAR) have been re- ported; however, they heavily rely on a
+    supervised learning manner. Despite the meaningful performance of these ap-
+    proaches, supervised training requires ground-truth pose labels, which is
+    the bottleneck for real-world applications. Differing from these approaches,
+    we focus on unsupervised learning for LiDAR odometry (LO) without trainable
+    labels. Achieving trainable LO in an unsupervised manner, we introduce the
+    uncertainty-aware loss with geometric confidence, thereby al- lowing the
+    reliability of the proposed pipeline. Evaluation on the KITTI, Complex
+    Urban, and Oxford RobotCar datasets demon- strate the prominent performance
+    of the proposed method compared to conventional model-based methods. The
+    proposed method shows a comparable result against SuMa (in KITTI), LeGO-LOAM
+    (in Complex Urban), and Stereo-VO (in Oxford RobotCar). The video and
+    extra-information of the paper are described in
+    https://sites.google.com/view/deeplo.},
+    VIDEO = {https://www.youtube.com/watch?v=-imRJXq6ZuE},
+    FILE = {ycho-2020-icra.pdf}
+}
+
+
+@INPROCEEDINGS {yspark-2020-icra,
+    AUTHOR = {Yeong Sang Park and Young-Sik Shin and \uline{Ayoung Kim}},
+    TITLE = {PhaRaO: Direct Radar Odometry using Phase Correlation},
+    BOOKTITLE = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+    YEAR = {2020},
+    MONTH = {May},
+    ADDRESS = {Paris},
+    NOTE = {Accepted. To appear.},
+}
+
 @INPROCEEDINGS {slee-2019-cams,
     AUTHOR = {Sejin Lee and Byungjae Park and \uline{Ayoung Kim}},
     TITLE = {Deep Learning based Object Detection via Style-transferred Underwater Sonar Images},
@@ -221,7 +313,9 @@
     MONTH =  {Sep.},
     ADDRESS = {Daejeon},
     TYPE = {conf},
-    NOTE = {Accepted. To appear.},
+    VOLUME = {52},
+    ISSUE = {21},
+    PAGE = {152--155},
 }
 
 @INPROCEEDINGS {ycho-2019-cams,
@@ -232,7 +326,9 @@
     MONTH =  {Sep.},
     ADDRESS = {Daejeon},
     TYPE = {conf},
-    NOTE = {Accepted. To appear.},
+    VOLUME = {52},
+    ISSUE = {21},
+    PAGE = {82--85},
 }
 
 @INPROCEEDINGS {mjeon-2019-cams,
@@ -243,7 +339,9 @@
     MONTH =  {Sep.},
     ADDRESS = {Daejeon},
     TYPE = {conf},
-    NOTE = {Accepted. To appear.},
+    VOLUME = {52},
+    ISSUE = {21},
+    PAGE = {78--81},
 }
 
 @INPROCEEDINGS {yspark-2019-iros,
@@ -253,7 +351,7 @@
     YEAR = {2019},
     MONTH = {Nov.},
     ADDRESS = {Macau},
-    NOTE = {Accepted. To appear.},
+    PAGES = {1307--1314},
 }
 
 @INPROCEEDINGS {slee-2019-ur,
@@ -263,7 +361,7 @@
     YEAR = {2019},
     MONTH = {Jun.},
     ADDRESS = {Jeju},
-    NOTE = {In Print}
+    PAGES = {106--112}
 }
 
 @INPROCEEDINGS {jwlee-2019-ur,
@@ -272,7 +370,7 @@
     BOOKTITLE = {Proceedings of the IEEE International Conference on Ubiquitous Robots (UR)},
     YEAR = {2019},
     MONTH = {Jun.},
-    NOTE = {In Print.},
+    PAGES = {189--193},
 }
 
 @INPROCEEDINGS {alee-2019-icra-ws,
