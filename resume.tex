@@ -19,7 +19,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{resume} % Use the custom resume.cls style
+\documentclass{cv} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
 
@@ -38,7 +38,7 @@
 % enable korean?
 \usepackage{ifthen}
 \newboolean{kor}
-\setboolean{kor}{false}
+\setboolean{kor}{true}
 \newcommand\koronly[1]{\ifthenelse{\boolean{kor}}{#1}}
 \usepackage{kotex}
 
@@ -48,17 +48,18 @@
 
 % Address and name
 %------------------------------------------------------
-203 NAME building \hfill \href{http://www-personal.umich.edu/$\sim$ayoungk/}{http://www-personal.umich.edu/$\sim$ayoungk/}\\
-2600 Draper Dr. \hfill \href{mailto:ayoungk@umich.edu}{ayoungk@umich.edu}\\
-Ann Arbor, MI 48109-2145 \hfill +1 (734)~$\cdot$~657~$\cdot$~8711\\
+ \hfill \href{http://irap.kaist.ac.kr/}{http://irap.kaist.ac.kr/}\\
+291 Daehak-ro \hfill ayoungk@kaist.ac.kr\\
+Yuseong-gu \hfill +82 (42)~$\cdot$~350~$\cdot$~3632\\
+Daejun, S. Korea \hfill \href{https://scholar.google.com/citations?user=7yveufgAAAAJ&hl=en}{Google Scholar}\\
 
 \hfil{\namesize\bf Ayoung Kim}\hfil
 
 \input{src/education.tex}
-\input{src/research_exp_short.tex}
-\input{src/pubs.tex}
+\input{src/positions.tex}
+\input{src/pubs-recent.tex}
 \input{src/interest.tex}
-\input{src/awards.tex}
+%\input{src/awards.tex}
 
 \bibliographystyle{plain}
 \nobibliography{src/ref}
